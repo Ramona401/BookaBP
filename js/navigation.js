@@ -279,6 +279,11 @@ const NavigationController = {
       });
   },
   
+  // 添加到finalizePageTransition函数末尾
+document.dispatchEvent(new CustomEvent('page:changed', {
+  detail: { pageId: pageId }
+}));
+
   // 完成页面转场
   finalizePageTransition: function(pageId) {
     // 更新导航状态
@@ -520,3 +525,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 导出导航控制器
 window.NavigationController = NavigationController;
+
+

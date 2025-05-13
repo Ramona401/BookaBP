@@ -666,3 +666,121 @@ a:hover {
   opacity: 1;
   visibility: visible;
 }
+
+/* 详情模态窗口样式 */
+.detail-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 8, 18, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.detail-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.detail-modal-content {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.4s;
+  box-shadow: var(--glow-medium);
+  padding: 25px;
+}
+
+.detail-modal-overlay.active .detail-modal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.detail-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.detail-modal-close:hover {
+  background: rgba(255, 214, 0, 0.2);
+  transform: rotate(90deg);
+}
+
+.detail-modal-close svg {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+  stroke-width: 2;
+}
+
+.detail-modal-body {
+  width: 100%;
+  height: 100%;
+}
+
+.detail-modal-loading,
+.detail-modal-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  font-size: 1.2rem;
+  color: var(--text-white-muted);
+}
+
+.detail-modal-error {
+  color: #ff4b4b;
+}
+
+/* 滚动条样式 */
+.detail-modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.detail-modal-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.detail-modal-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 214, 0, 0.3);
+  border-radius: 4px;
+}
+
+.detail-modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 214, 0, 0.5);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .detail-modal-content {
+    width: 95%;
+    padding: 20px 15px;
+  }
+}

@@ -1,123 +1,1322 @@
-<!-- 第7页: 双轨创新产品体系 -->
-<div class="content-container">
-  <!-- 页面标题 -->
-  <div class="page-title">
-    <h1>Booka 双轨创新产品体系</h1>
+<!-- page7-product.html - 双轨创新产品体系 -->
+<div class="content-wrapper product-wrapper">
+  <div class="page-title animate fade-in">
+    <h1>Booka双轨创新产品体系</h1>
   </div>
   
-  <!-- 产品展示区域 -->
-  <div class="product-showcase">
+  <div class="product-cards">
     <!-- 左侧: 沉浸式光影阅读 (2-8岁) -->
-    <div class="product-card">
-      <div class="product-header">
-        <h2 class="product-title">沉浸式光影阅读</h2>
-        <p class="product-age">2-8岁</p>
+    <div class="product-card animate fade-in-up delay-200">
+     <div class="card-icon">📚</div>
+<div class="card-content">
+  <h2 class="card-title">沉浸式光影阅读</h2>
+  <p class="card-desc">对应2-8岁认知特点<br>激发情感连接与自主学习</p>
+  
+  <div class="product-video">
+    <video class="video-element" poster="images/immersive-reading.jpg" preload="metadata">
+      <source src="images/immersive-reading.mp4" type="video/mp4">
+      您的浏览器不支持HTML5视频
+    </video>
+    <div class="video-play-button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"></polygon>
+      </svg>
+    </div>
+  </div>
+</div>
+
+      <div class="card-footer">
+        <button class="detail-button" data-page="product-detail-1">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+          了解详情
+        </button>
+        <div class="card-stat">
+          <span class="stat-label">续费率</span>
+          <span class="stat-value" data-countup="75" data-suffix="%+">75%+</span>
+        </div>
       </div>
-      
-      <div class="product-image">
-        <!-- 插入沉浸式阅读课堂照片 -->
-        <img src="../images/immersive-reading.jpg" alt="沉浸式光影阅读课堂">
-      </div>
-      
-      <div class="product-description">
-        <p>对应2-8岁认知特点与兴趣，孩子主动学习</p>
-        <div class="highlight-stat">续费率75%+</div>
-        <p class="feature-text">学习效能提升50-70%</p>
-      </div>
-      
-      <button class="detail-button">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-        了解详情
-      </button>
     </div>
     
     <!-- 右侧: AI阅读教练 (9-13岁) -->
-    <div class="product-card">
-      <div class="product-header">
-        <h2 class="product-title">AI阅读教练</h2>
-        <p class="product-age">9-13岁</p>
-      </div>
-      
-      <div class="product-image">
-        <!-- 插入AI界面截图 -->
-        <img src="../images/ai-coach.jpg" alt="AI阅读教练界面">
-      </div>
-      
-      <div class="product-description">
-        <p>自适应推荐+能力测评系统，批判思维与表达力训练</p>
-        <p class="feature-text">为AI时代必备能力打基础</p>
-        <div class="highlight-tags">
-          <span class="tag">个性化学习</span>
-          <span class="tag">跨学科</span>
+    <div class="product-card animate fade-in-up delay-300">
+      <div class="card-icon">🤖</div>
+      <div class="card-content">
+        <h2 class="card-title">AI阅读教练</h2>
+        <p class="card-desc">自适应个性化学习路径<br>培养批判思维与表达能力</p>
+        
+        <div class="product-ai-preview">
+          <img src="images/ai-coach.jpg" alt="AI阅读教练界面">
+          <div class="ai-badge">
+            <span class="ai-pulse"></span>
+            AI 驱动
+          </div>
         </div>
       </div>
-      
-      <button class="detail-button">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-        了解详情
-      </button>
+      <div class="card-footer">
+        <button class="detail-button" data-page="product-detail-2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+          了解详情
+        </button>
+        <div class="card-stat">
+          <span class="stat-label">效能提升</span>
+          <span class="stat-value" data-countup="60" data-suffix="%+">60%+</span>
+        </div>
+      </div>
     </div>
-  </div>
-  
-  <!-- 产品优势总结 -->
-  <div class="product-summary">
-    <h3>双轨模式优势：</h3>
-    <div class="advantage-points">
-      <div class="advantage">
-        <div class="advantage-icon">🚀</div>
-        <div class="advantage-text">低龄段重视情感培养</div>
+    
+    <!-- 左下: 双轨优势 -->
+    <div class="product-card animate fade-in-up delay-400">
+      <div class="card-icon">🔄</div>
+      <div class="card-content">
+        <h2 class="card-title">双轨优势矩阵</h2>
+        <p class="card-desc">无缝衔接的成长体系<br>兼顾兴趣培养与能力提升</p>
+        
+        <div class="advantage-matrix">
+          <div class="advantage-item">
+            <div class="advantage-icon">🚀</div>
+            <div class="advantage-text">低龄情感培养</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">🧠</div>
+            <div class="advantage-text">高阶思维训练</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">🔍</div>
+            <div class="advantage-text">个性化学习</div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">📈</div>
+            <div class="advantage-text">兴趣与效果并重</div>
+          </div>
+        </div>
       </div>
-      
-      <div class="advantage">
-        <div class="advantage-icon">🧠</div>
-        <div class="advantage-text">高龄段培养AI时代核心能力</div>
+      <div class="card-footer">
+        <div class="advantage-tagline">全年龄段无缝衔接的英语学习解决方案</div>
       </div>
-      
-      <div class="advantage">
-        <div class="advantage-icon">🔄</div>
-        <div class="advantage-text">无缝衔接的学习路径</div>
+    </div>
+    
+    <!-- 右下: 效果数据 -->
+    <div class="product-card animate fade-in-up delay-500">
+      <div class="card-icon">📊</div>
+      <div class="card-content">
+        <h2 class="card-title">成效数据</h2>
+        <p class="card-desc">经实证的学习效果<br>家长与投资人双重认可</p>
+        
+        <div class="data-grid">
+          <div class="data-item">
+            <div class="data-value" data-countup="75" data-suffix="%+">75%+</div>
+            <div class="data-label">课程续费率</div>
+          </div>
+          <div class="data-item">
+            <div class="data-value" data-countup="85" data-suffix="%+">85%+</div>
+            <div class="data-label">家长推荐率</div>
+          </div>
+          <div class="data-item">
+            <div class="data-value" data-countup="60" data-suffix="%+">60%+</div>
+            <div class="data-label">学习效能提升</div>
+          </div>
+          <div class="data-item">
+            <div class="data-value" data-countup="700" data-suffix="+">700+</div>
+            <div class="data-label">课时内容</div>
+          </div>
+        </div>
       </div>
-      
-      <div class="advantage">
-        <div class="advantage-icon">📈</div>
-        <div class="advantage-text">效果与兴趣兼顾</div>
+      <div class="card-footer">
+        <div class="benefit-tagline">"既满足当前应试需求，又培养AI时代核心竞争力"</div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- 详情弹窗1: 沉浸式光影阅读 -->
-<div class="product-detail-overlay" id="product-detail-1">
-  <div class="detail-container">
-    <div class="close-detail">
+<div class="modal-overlay product-detail-overlay" id="product-detail-1">
+  <div class="modal-container detail-container">
+    <div class="modal-close close-detail">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="18" y1="6" x2="6" y2="18"></line>
         <line x1="6" y1="6" x2="18" y2="18"></line>
       </svg>
     </div>
     
-    <h2 class="detail-title">沉浸式光影阅读：情感与效能的结合</h2>
-    
-    <!-- 详情内容... -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="detail-title">沉浸式光影阅读：情感与效能的结合</h2>
+      </div>
+      
+      <div class="modal-body">
+        <div class="detail-content grid grid-2">
+          <div class="detail-description">
+            <h3>技术与教育的完美融合</h3>
+            <p>Booka沉浸式光影阅读以专业投影技术与精心设计的情境教室，创造出全方位英语学习环境。孩子们可以完全沉浸在故事情境中，通过感官体验建立语言认知与情感连接。</p>
+            
+            <h3>科学的认知设计</h3>
+            <p>基于儿童认知发展理论,针对2-8岁儿童的认知特点,研发出融合视觉、听觉、触觉的互动学习模式,有效激活右脑思维,提升语言习得速度。</p>
+            
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="feature-icon">✓</div>
+                <div class="feature-content">
+                  <h4>情境式学习</h4>
+                  <p>在生动故事情境中自然习得词汇与句型</p>
+                </div>
+              </div>
+              
+              <div class="feature-item">
+                <div class="feature-icon">✓</div>
+                <div class="feature-content">
+                  <h4>科学复现</h4>
+                  <p>精准控制词汇复现频率,符合艾宾浩斯遗忘曲线</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="detail-visuals">
+            <div class="detail-gallery">
+              <img src="images/immersive-reading-detail.jpg" alt="沉浸式阅读教室" class="detail-image">
+            </div>
+            
+            <div class="detail-stats grid grid-2">
+              <div class="stat-card">
+                <div class="stat-value" data-countup="300" data-suffix="+">0+</div>
+                <div class="stat-label">精选原版绘本</div>
+              </div>
+              
+              <div class="stat-card">
+                <div class="stat-value" data-countup="75" data-suffix="%">0%</div>
+                <div class="stat-label">续费率</div>
+              </div>
+              
+              <div class="stat-card">
+                <div class="stat-value" data-countup="95" data-suffix="%">0%</div>
+                <div class="stat-label">课堂注意力</div>
+              </div>
+              
+              <div class="stat-card">
+                <div class="stat-value" data-countup="60" data-suffix="%+">0%+</div>
+                <div class="stat-label">效能提升</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- 详情弹窗2: AI阅读教练 -->
-<div class="product-detail-overlay" id="product-detail-2">
-  <div class="detail-container">
-    <div class="close-detail">
+<div class="modal-overlay product-detail-overlay" id="product-detail-2">
+  <div class="modal-container detail-container">
+    <div class="modal-close close-detail">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="18" y1="6" x2="6" y2="18"></line>
         <line x1="6" y1="6" x2="18" y2="18"></line>
       </svg>
     </div>
     
-    <h2 class="detail-title">AI阅读教练：个性化学习的未来</h2>
-    
-    <!-- 详情内容... -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="detail-title">AI阅读教练：个性化学习的未来</h2>
+      </div>
+      
+      <div class="modal-body">
+        <div class="detail-content grid grid-2">
+          <div class="detail-description">
+            <h3>AI革新英语学习体验</h3>
+            <p>Booka AI阅读教练基于大语言模型开发，能够精准评估学生的英语水平，提供个性化学习建议。系统会根据学生的阅读表现、兴趣偏好和学习目标，智能推荐适合的阅读材料和练习。</p>
+            
+            <h3>培养AI时代核心竞争力</h3>
+            <p>通过引导式阅读与问答互动，不仅提升孩子的英语理解能力，更培养批判性思维、分析推理和表达能力，这些是AI时代人类的核心竞争力。</p>
+            
+            <div class="ai-capabilities">
+              <div class="ai-capability">
+                <div class="capability-icon">🧠</div>
+                <div class="capability-title">自适应学习路径</div>
+              </div>
+              
+              <div class="ai-capability">
+                <div class="capability-icon">💬</div>
+                <div class="capability-title">智能对话交流</div>
+              </div>
+              
+              <div class="ai-capability">
+                <div class="capability-icon">📊</div>
+                <div class="capability-title">数据可视化进度</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="detail-visuals">
+            <div class="ai-interface">
+              <img src="images/ai-coach-detail.jpg" alt="AI阅读教练界面" class="detail-image">
+              <div class="interface-overlay">
+                <div class="interface-dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <div class="interface-text">AI分析中</div>
+              </div>
+            </div>
+            
+            <div class="tech-specs">
+              <h4>技术规格</h4>
+              <div class="specs-grid">
+                <div class="spec-item">
+                  <div class="spec-label">核心模型</div>
+                  <div class="spec-value">自研教育大模型</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">内容库</div>
+                  <div class="spec-value">5000+阅读文本</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">能力维度</div>
+                  <div class="spec-value">16项评估指标</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<!-- 页面特有的CSS -->
+<style>
+  /* 产品页特定样式 - 参照最新设计 */
+  .product-wrapper {
+    padding-top: 30px;
+    padding-bottom: 90px; /* 增加底部间距，避免与底部导航重叠 */
+    height: auto; /* 改为自适应高度 */
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .page-title {
+    margin-bottom: 30px;
+  }
+  
+  .page-title h1 {
+    font-size: 2.8rem;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .page-title h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: var(--brand-yellow);
+    border-radius: 2px;
+  }
+  
+  /* 产品卡片网格 - 模仿highlight-cards的布局 */
+  .product-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    width: 92%; /* 让卡片变窄，避免与右侧翻页按钮重叠 */
+    margin: 0 auto; /* 居中显示 */
+    min-height: 540px; /* 确保卡片高度足够 */
+  }
+  
+  .product-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 15px;
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-medium);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--card-glow);
+    cursor: pointer;
+  }
+  
+  .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--brand-yellow);
+    opacity: 0.7;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--brand-yellow);
+    box-shadow: var(--glow-medium);
+  }
+  
+  .card-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2.5rem;
+    opacity: 0.2;
+  }
+  
+  .card-content {
+    padding-top: 5px;
+  }
+  
+  .card-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  
+  .card-desc {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: var(--text-white-muted);
+    margin-bottom: 15px;
+  }
+  
+  /* 视频与图片容器 */
+  .product-video {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 15px 0;
+    box-shadow: var(--glow-subtle);
+    cursor: pointer;
+  }
+  
+  .product-video .video-poster {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-yellow);
+    transition: all var(--transition-medium);
+  }
+  
+  .video-play-button svg {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .product-video:hover .video-play-button {
+    background: rgba(255, 214, 0, 0.8);
+    color: var(--brand-dark);
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .product-ai-preview {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 15px 0;
+    box-shadow: var(--glow-subtle);
+  }
+  
+  .product-ai-preview img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s;
+  }
+  
+  .product-card:hover .product-ai-preview img {
+    transform: scale(1.05);
+  }
+  
+  .ai-badge {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #00c3ff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .ai-pulse {
+    width: 8px;
+    height: 8px;
+    background: #00c3ff;
+    border-radius: 50%;
+    display: inline-block;
+    animation: aiPulse 1.5s infinite;
+  }
+  
+  @keyframes aiPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  
+  /* 优势矩阵 */
+  .advantage-matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 15px 0;
+  }
+  
+  .advantage-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all var(--transition-medium);
+  }
+  
+  .advantage-item:hover {
+    background: rgba(255, 214, 0, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  .advantage-icon {
+    font-size: 1.5rem;
+  }
+  
+  .advantage-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-white);
+  }
+  
+  .advantage-tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-white-muted);
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* 数据网格 */
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 15px 0;
+  }
+  
+  .data-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: all var(--transition-medium);
+  }
+  
+  .data-item:hover {
+    background: rgba(255, 214, 0, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  .data-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    margin-bottom: 5px;
+  }
+  
+  .data-label {
+    font-size: 1rem;
+    color: var(--text-white-muted);
+  }
+  
+  .benefit-tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-white-muted);
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* 卡片底部 */
+  .card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .detail-button {
+    padding: 8px 16px;
+    background: rgba(255, 214, 0, 0.2);
+    border: 1px solid var(--brand-yellow);
+    border-radius: 20px;
+    color: var(--brand-yellow);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .detail-button:hover {
+    background: var(--brand-yellow);
+    color: var(--brand-dark);
+    transform: translateY(-2px);
+  }
+  
+  .card-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .stat-label {
+    font-size: 0.95rem;
+    color: var(--text-white-muted);
+    margin-bottom: 2px;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    text-shadow: 0 0 10px rgba(255, 214, 0, 0.2);
+  }
+  
+  /* 详情弹窗 - 修复弹窗问题 */
+  .product-detail-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+  }
+  
+  .product-detail-overlay.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .detail-container {
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    background: var(--card-bg);
+    border-radius: 15px;
+    position: relative;
+    overflow-y: auto;
+  }
+  
+  .close-detail {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .close-detail:hover {
+    background: rgba(255, 214, 0, 0.2);
+  }
+  
+  .modal-content {
+    padding: 30px;
+  }
+  
+  .modal-header {
+    margin-bottom: 20px;
+    padding-right: 40px;
+  }
+  
+  .detail-title {
+    font-size: 2rem;
+    color: var(--brand-yellow);
+    margin-bottom: 15px;
+  }
+  
+  /* 详细内容样式 */
+  .detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .detail-description h3 {
+    font-size: 1.6rem;
+    color: var(--brand-yellow);
+    margin-bottom: 15px;
+  }
+  
+  .detail-description p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--text-white-muted);
+    margin-bottom: 20px;
+  }
+  
+  .feature-list {
+    margin-top: 25px;
+  }
+  
+  .feature-item {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  
+  .feature-icon {
+    font-size: 1.5rem;
+    color: var(--brand-yellow);
+    flex-shrink: 0;
+  }
+  
+  .feature-content h4 {
+    font-size: 1.2rem;
+    color: var(--text-white);
+    margin-bottom: 5px;
+  }
+  
+  .feature-content p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .detail-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* AI特殊组件 */
+  .ai-capabilities {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .ai-capability {
+    background: rgba(0, 195, 255, 0.1);
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .capability-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .capability-title {
+    color: #00c3ff;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .ai-interface {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .interface-overlay {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .interface-dots {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .dot {
+    width: 6px;
+    height: 6px;
+    background: #00c3ff;
+    border-radius: 50%;
+    animation: dotPulse 1.5s infinite;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  @keyframes dotPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+  
+  .interface-text {
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .tech-specs {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  .tech-specs h4 {
+    color: var(--brand-yellow);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .specs-grid {
+    display: grid;
+    gap: 12px;
+  }
+  
+  .spec-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+  }
+  
+  .spec-label {
+    color: var(--text-white-muted);
+    font-size: 1rem;
+  }
+  
+  .spec-value {
+    color: var(--text-white);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  /* 响应式调整 */
+  @media(max-width: 1200px) {
+    .product-cards {
+      width: 95%;
+      gap: 20px;
+    }
+  }
+  
+  @media(max-width: 992px) {
+    .product-cards {
+      width: 100%;
+    }
+    
+    .detail-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .product-cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      gap: 20px;
+      min-height: auto;
+    }
+    
+    .product-card {
+      height: auto;
+      min-height: 200px;
+    }
+    
+    .advantage-matrix,
+    .data-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media(max-width: 576px) {
+    .product-wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    
+    .product-card {
+      padding: 18px 15px;
+    }
+    
+    .card-title {
+      font-size: 1.9rem;
+    }
+    
+    .card-desc {
+      font-size: 1.1rem;
+    }
+    
+    .data-value {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* 详情模态窗口样式 */
+.detail-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  padding: 20px;
+}
+
+.detail-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.detail-modal-content {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 15px;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.4s;
+  box-shadow: 0 0 30px rgba(255, 214, 0, 0.2);
+  padding: 25px;
+}
+
+.detail-modal-overlay.active .detail-modal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.detail-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+.detail-modal-close:hover {
+  background: rgba(255, 214, 0, 0.2);
+  transform: rotate(90deg);
+}
+
+.detail-modal-close svg {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+  stroke-width: 2;
+}
+
+.detail-modal-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.detail-modal-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #ff5555;
+  text-align: center;
+}
+
+.retry-btn {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background: rgba(255, 214, 0, 0.2);
+  border: 1px solid var(--brand-yellow);
+  border-radius: 20px;
+  color: var(--brand-yellow);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.retry-btn:hover {
+  background: var(--brand-yellow);
+  color: var(--brand-dark);
+}
+
+/* 禁止模态窗口打开时背景滚动 */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* 滚动条样式 */
+.detail-modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.detail-modal-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.detail-modal-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 214, 0, 0.3);
+  border-radius: 4px;
+}
+
+/* 移动设备优化 */
+@media (max-width: 768px) {
+  .detail-modal-content {
+    width: 95%;
+    padding: 20px 15px;
+  }
+  
+  .detail-modal-close {
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+  }
+}
+.product-video {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-element {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(255, 214, 0, 0.5);
+}
+
+.video-play-button svg {
+  width: 30px;
+  height: 30px;
+  stroke: var(--brand-yellow);
+  fill: none;
+}
+
+.video-play-button:hover {
+  background: var(--brand-yellow);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-play-button:hover svg {
+  stroke: var(--brand-dark);
+}
+
+.video-play-button polygon {
+  fill: var(--brand-yellow);
+}
+
+.video-play-button:hover polygon {
+  fill: var(--brand-dark);
+}
+</style>
+
+<!-- 页面特有的JS -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 初始化计数动画
+    initCountUpAnimations();
+    
+    // 视频播放按钮点击事件
+    const videoContainer = document.querySelector('.product-video');
+    if (videoContainer) {
+      videoContainer.addEventListener('click', function() {
+        // 实际项目中可以在这里实现视频播放逻辑
+        console.log('视频播放按钮点击');
+      });
+    }
+    
+    // 点击产品卡片
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+      const detailButton = card.querySelector('.detail-button');
+      if (detailButton) {
+        card.addEventListener('click', function(e) {
+          // 如果点击的是详情按钮本身，则不触发卡片的点击事件
+          if (e.target.closest('.detail-button')) return;
+          
+          // 否则触发详情按钮的点击事件
+          detailButton.click();
+        });
+      }
+    });
+    
+    // 打开产品详情弹窗 - 修复弹窗问题
+    const detailButtons = document.querySelectorAll('.detail-button');
+    detailButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const targetId = this.getAttribute('data-page');
+        const modal = document.getElementById(targetId);
+        
+        if (modal) {
+          // 确保弹窗层级高于其他元素
+          modal.style.zIndex = '9999';
+          // 添加active类显示弹窗
+          modal.classList.add('active');
+          // 禁用背景滚动
+          document.body.style.overflow = 'hidden';
+          
+          // 激活弹窗内的计数动画
+          initCountUpAnimations(modal);
+        }
+      });
+    });
+    
+    // 关闭弹窗
+    const closeButtons = document.querySelectorAll('.close-detail');
+    closeButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const modal = this.closest('.product-detail-overlay');
+        if (modal) {
+          modal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+    
+    // 点击背景关闭弹窗
+    const modals = document.querySelectorAll('.product-detail-overlay');
+    modals.forEach(modal => {
+      modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+    
+    // AI阅读教练卡片特殊效果
+    const aiPreview = document.querySelector('.product-ai-preview');
+    if (aiPreview) {
+      aiPreview.addEventListener('mousemove', function(e) {
+        // 计算鼠标在容器内的相对位置
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        // 计算在元素内的百分比位置(-50到50)
+        const xPercent = ((x / rect.width) - 0.5) * 100;
+        const yPercent = ((y / rect.height) - 0.5) * 100;
+        
+        // 应用轻微的视差效果
+        const badge = this.querySelector('.ai-badge');
+        if (badge) {
+          badge.style.transform = `translate(${xPercent * 0.05}px, ${yPercent * 0.05}px)`;
+        }
+      });
+      
+      aiPreview.addEventListener('mouseleave', function() {
+        const badge = this.querySelector('.ai-badge');
+        if (badge) {
+          badge.style.transform = '';
+        }
+      });
+    }
+    
+    // 数字计数动画
+    function initCountUpAnimations(container = document) {
+      const countElements = container.querySelectorAll('[data-countup]');
+      
+      countElements.forEach(el => {
+        // 如果已经初始化过，跳过
+        if (el.dataset.initialized === 'true') return;
+        
+        const target = parseInt(el.getAttribute('data-countup'));
+        const suffix = el.getAttribute('data-suffix') || '';
+        const duration = 2000; // 动画持续2秒
+        
+        let startTimestamp = null;
+        
+        function step(timestamp) {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const elapsed = timestamp - startTimestamp;
+          const progress = Math.min(elapsed / duration, 1);
+          
+          // 使用缓动函数使动画更自然
+          const easedProgress = 1 - Math.pow(1 - progress, 3);
+          const currentValue = Math.floor(easedProgress * target);
+          
+          el.textContent = currentValue + suffix;
+          
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            // 动画完成后标记为已初始化
+            el.dataset.initialized = 'true';
+          }
+        }
+        
+        // 使用IntersectionObserver检测元素是否可见
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                // 当元素进入视口时启动动画
+                requestAnimationFrame(step);
+                observer.unobserve(el); // 只观察一次
+              }
+            });
+          }, { threshold: 0.1 });
+          
+          observer.observe(el);
+        } else {
+          // 如果不支持IntersectionObserver，直接启动动画
+          requestAnimationFrame(step);
+        }
+      });
+    }
+  });
+  // 添加到页面特定的JavaScript中
+document.addEventListener('DOMContentLoaded', function() {
+  // 获取所有视频和播放按钮
+  const videoContainers = document.querySelectorAll('.product-video');
+  
+  videoContainers.forEach(container => {
+    const video = container.querySelector('.video-element');
+    const playButton = container.querySelector('.video-play-button');
+    
+    if (video && playButton) {
+      // 点击播放按钮时播放视频
+      playButton.addEventListener('click', function() {
+        if (video.paused) {
+          // 播放视频
+          video.play()
+            .then(() => {
+              // 视频开始播放后，隐藏播放按钮
+              playButton.style.opacity = '0';
+            })
+            .catch(err => {
+              console.error('视频播放失败:', err);
+            });
+        } else {
+          // 暂停视频
+          video.pause();
+          // 显示播放按钮
+          playButton.style.opacity = '1';
+        }
+      });
+      
+      // 视频播放结束后，显示播放按钮
+      video.addEventListener('ended', function() {
+        playButton.style.opacity = '1';
+      });
+      
+      // 视频暂停时，显示播放按钮
+      video.addEventListener('pause', function() {
+        playButton.style.opacity = '1';
+      });
+    }
+  });
+});
+</script>
