@@ -1,0 +1,619 @@
+<!-- page-product-detail-2.html - AI阅读教练详情 -->
+<div class="content-wrapper product-detail-wrapper">
+  <div class="page-title animate fade-in">
+    <h1>AI阅读教练：个性化学习的未来</h1>
+  </div>
+  
+  <div class="detail-content-container animate fade-in-up delay-200">
+    <div class="detail-content grid grid-2">
+      <div class="detail-description">
+        <h3>AI革新英语学习体验</h3>
+        <p>Booka AI阅读教练基于大语言模型开发，结合多模态人工智能能力，为孩子提供个性化的阅读tutor服务。从文章匹配，到完整的阅读引导；从词汇学习，阅读理解，到阅读技能和思维引导，到知识拓展，通通囊括。</p>
+        
+        <h3>培养AI时代核心竞争力</h3>
+        <p>通过引导式阅读与问答互动，不仅提升孩子的英语理解能力，更培养批判性思维、分析推理和表达能力，这些是AI时代人类的核心竞争力。</p>
+        
+        <div class="ai-capabilities">
+          <div class="ai-capability">
+            <div class="capability-icon">🧠</div>
+            <div class="capability-title">个性化学习路径</div>
+          </div>
+          
+          <div class="ai-capability">
+            <div class="capability-icon">💬</div>
+            <div class="capability-title">智能对话交流</div>
+          </div>
+          
+          <div class="ai-capability">
+            <div class="capability-icon">📊</div>
+            <div class="capability-title">数据可视化进度</div>
+          </div>
+        </div>
+        
+        <!-- 体验按钮 - 简单链接方式 -->
+        <div class="ai-try-wrapper">
+          <a href="https://www.xingyunlink.com/chat/share?shareId=1w81wudj9pqiq3u8z2ch78wb" target="_blank" class="ai-try-button">
+            <span class="pulse-circle"></span>
+            立即体验AI阅读教练
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <div class="ai-try-note">在新窗口中打开体验</div>
+        </div>
+      </div>
+      
+      <div class="detail-visuals">
+        <div class="ai-interface">
+          <img src="images/ai-coach-detail.jpg" alt="AI阅读教练界面" class="detail-image">
+          <div class="interface-overlay">
+            <div class="interface-dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="interface-text">AI分析中</div>
+          </div>
+          
+          <!-- 浮动体验链接 - 简单链接方式 -->
+          <a href="https://www.xingyunlink.com/chat/share?shareId=1w81wudj9pqiq3u8z2ch78wb" target="_blank" class="ai-demo-button-overlay" aria-label="体验AI阅读教练">
+            <span class="pulse-circle"></span>
+            体验AI教练
+          </a>
+        </div>
+        
+        <div class="tech-specs">
+          <h4>技术规格</h4>
+          <div class="specs-grid">
+            <div class="spec-item">
+              <div class="spec-label">核心模型</div>
+              <div class="spec-value">自研阅读Agent</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">内容库</div>
+              <div class="spec-value">5000+阅读文本</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">能力维度</div>
+              <div class="spec-value">28项评估指标</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 二维码体验区 -->
+        <div class="qr-experience-section">
+          <div class="qr-container">
+            <img src="images/xingyun-qr.png" alt="AI教练体验二维码" class="qr-code" onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.xingyunlink.com/chat/share?shareId=1w81wudj9pqiq3u8z2ch78wb'; this.onerror='';">
+          </div>
+          <div class="qr-text">
+            <div class="qr-title">扫码体验</div>
+            <div class="qr-description">使用手机相机扫描二维码，立即体验AI阅读教练</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 返回按钮 -->
+  <div class="back-button-container animate fade-in delay-300">
+    <button class="back-button" onclick="window.NavigationController.navigateToPage('page7-product', 'prev')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+      </svg>
+      返回产品列表
+    </button>
+  </div>
+</div>
+
+<!-- 页面特有样式 -->
+<style>
+  .product-detail-wrapper {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .page-title {
+    margin-bottom: 30px;
+  }
+  
+  .page-title h1 {
+    font-size: 2.8rem;
+    display: inline-block;
+    position: relative;
+    color: var(--brand-yellow);
+  }
+  
+  .page-title h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: var(--brand-yellow);
+    border-radius: 2px;
+  }
+  
+  .detail-content-container {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: var(--card-glow);
+  }
+  
+  /* 详细内容样式 */
+  .detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .detail-description h3 {
+    font-size: 1.6rem;
+    color: var(--brand-yellow);
+    margin-bottom: 15px;
+  }
+  
+  .detail-description p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--text-white-muted);
+    margin-bottom: 20px;
+  }
+  
+  /* AI特殊组件 */
+  .ai-capabilities {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .ai-capability {
+    background: rgba(0, 195, 255, 0.1);
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .ai-capability:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 195, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 195, 255, 0.2);
+  }
+  
+  .capability-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .capability-title {
+    color: #00c3ff;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  /* 体验按钮区样式 */
+  .ai-try-wrapper {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .ai-try-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 25px;
+    background: #4e83fd;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(78, 131, 253, 0.4);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ai-try-button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    left: -100%;
+    animation: buttonShine 3s infinite;
+  }
+  
+  @keyframes buttonShine {
+    0% { left: -100%; }
+    20%, 100% { left: 100%; }
+  }
+  
+  .ai-try-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(78, 131, 253, 0.5);
+  }
+  
+  .ai-try-note {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 8px;
+  }
+  
+  .pulse-circle {
+    width: 10px;
+    height: 10px;
+    background: #00c3ff;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .pulse-circle::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 0 0 rgba(0, 195, 255, 0.7);
+  }
+  
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 195, 255, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(0, 195, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 195, 255, 0); }
+  }
+  
+  .ai-interface {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-glow);
+  }
+  
+  .detail-image {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .ai-interface:hover .detail-image {
+    transform: scale(1.03);
+  }
+  
+  .interface-overlay {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+  }
+  
+  .interface-dots {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .dot {
+    width: 6px;
+    height: 6px;
+    background: #00c3ff;
+    border-radius: 50%;
+    animation: dotPulse 1.5s infinite;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  @keyframes dotPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+  
+  .interface-text {
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  /* 浮动按钮样式 */
+  .ai-demo-button-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(78, 131, 253, 0.9);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  
+  .ai-demo-button-overlay:hover {
+    background: rgba(78, 131, 253, 1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+  }
+  
+  .tech-specs {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tech-specs h4 {
+    color: var(--brand-yellow);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .specs-grid {
+    display: grid;
+    gap: 12px;
+  }
+  
+  .spec-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+  }
+  
+  .spec-label {
+    color: var(--text-white-muted);
+    font-size: 1rem;
+  }
+  
+  .spec-value {
+    color: var(--text-white);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  /* 二维码体验区 */
+  .qr-experience-section {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .qr-container {
+    flex-shrink: 0;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .qr-code {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .qr-text {
+    flex: 1;
+  }
+  
+  .qr-title {
+    color: var(--brand-yellow);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .qr-description {
+    color: var(--text-white-muted);
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* 返回按钮 */
+  .back-button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(255, 214, 0, 0.15);
+    border: 1px solid var(--brand-yellow);
+    border-radius: 30px;
+    color: var(--brand-yellow);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .back-button:hover {
+    background: rgba(255, 214, 0, 0.3);
+    transform: translateX(-5px);
+  }
+  
+  /* 响应式调整 */
+  @media(max-width: 992px) {
+    .detail-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .ai-capabilities {
+      flex-direction: column;
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .product-detail-wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    
+    .detail-content-container {
+      padding: 20px;
+    }
+    
+    .ai-demo-button-overlay {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+    
+    .pulse-circle {
+      width: 8px;
+      height: 8px;
+      margin-right: 6px;
+    }
+    
+    .qr-experience-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .qr-container {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media(max-width: 576px) {
+    .page-title h1 {
+      font-size: 2rem;
+    }
+    
+    .detail-description h3 {
+      font-size: 1.4rem;
+    }
+    
+    .detail-description p {
+      font-size: 1rem;
+    }
+    
+    .ai-try-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 初始化基本动画和效果
+    initBasicAnimations();
+    
+    // 添加按钮悬停效果
+    addButtonHoverEffects();
+    
+    // 二维码加载失败时的处理
+    handleQRCodeFallback();
+    
+    // 基础动画初始化
+    function initBasicAnimations() {
+      // AI能力卡片hover效果
+      const aiCapabilities = document.querySelectorAll('.ai-capability');
+      aiCapabilities.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-5px)';
+        });
+        item.addEventListener('mouseleave', function() {
+          this.style.transform = '';
+        });
+      });
+      
+      // 图片缩放效果
+      const aiInterface = document.querySelector('.ai-interface');
+      if (aiInterface) {
+        aiInterface.addEventListener('mouseenter', function() {
+          const img = this.querySelector('.detail-image');
+          if (img) {
+            img.style.transform = 'scale(1.03)';
+          }
+        });
+        aiInterface.addEventListener('mouseleave', function() {
+          const img = this.querySelector('.detail-image');
+          if (img) {
+            img.style.transform = '';
+          }
+        });
+      }
+    }
+    
+    // 添加按钮悬停效果
+    function addButtonHoverEffects() {
+      // 添加体验按钮悬停效果
+      const tryButton = document.querySelector('.ai-try-button');
+      if (tryButton) {
+        tryButton.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-3px)';
+        });
+        tryButton.addEventListener('mouseleave', function() {
+          this.style.transform = '';
+        });
+      }
+      
+      // 添加浮动按钮悬停效果
+      const demoButton = document.querySelector('.ai-demo-button-overlay');
+      if (demoButton) {
+        demoButton.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-3px)';
+        });
+        demoButton.addEventListener('mouseleave', function() {
+          this.style.transform = '';
+        });
+      }
+    }
+    
+    // 处理二维码加载失败情况
+    function handleQRCodeFallback() {
+      const qrCode = document.querySelector('.qr-code');
+      if (qrCode && !qrCode.complete) {
+        qrCode.onerror = function() {
+          this.src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.xingyunlink.com/chat/share?shareId=1w81wudj9pqiq3u8z2ch78wb';
+          this.onerror = '';
+        };
+      }
+    }
+  });
+</script>

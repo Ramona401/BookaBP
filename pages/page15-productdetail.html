@@ -1,0 +1,309 @@
+<!-- page-product-detail-1.html - 沉浸式光影阅读详情 -->
+<div class="content-wrapper product-detail-wrapper">
+  <div class="page-title animate fade-in">
+    <h1>沉浸式光影阅读：情感与效能的结合</h1>
+  </div>
+  
+  <div class="detail-content-container animate fade-in-up delay-200">
+    <div class="detail-content grid grid-2">
+      <div class="detail-description">
+        <h3>技术与教育的完美融合</h3>
+        <p>Booka沉浸式光影阅读以专业投影技术与精心设计的情境教室，创造出全方位英语学习环境。孩子们可以完全沉浸在故事情境中，通过感官体验建立语言认知与情感连接。</p>
+        
+        <h3>科学的认知设计</h3>
+        <p>基于儿童认知发展理论，针对2-8岁儿童的认知特点，研发出融合视觉、听觉、触觉的互动学习模式，有效激活右脑思维，提升语言习得速度。</p>
+        
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div class="feature-content">
+              <h4>情境式学习</h4>
+              <p>在生动故事情境中自然习得词汇与句型，训练英语思维</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div class="feature-content">
+              <h4>认知网搭建</h4>
+              <p>在光影和绘本阅读中，搭建英语认知网，形成关联和长期记忆</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div class="feature-content">
+              <h4>科学复现</h4>
+              <p>精准控制词汇复现频率，符合艾宾浩斯遗忘曲线</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div class="feature-content">
+              <h4>阅读能力培养</h4>
+              <p>从听说积累，到阅读技能培养，到自主阅读和思考</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="detail-visuals">
+        <div class="detail-gallery">
+          <img src="images/immersive-reading-detail.jpg" alt="沉浸式阅读教室" class="detail-image">
+        </div>
+        
+        <div class="detail-stats grid grid-2">
+          <div class="stat-card">
+            <div class="stat-value" data-countup="300" data-suffix="+">100本+/年</div>
+            <div class="stat-label">精选原版绘本</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-value" data-countup="75" data-suffix="%">75%</div>
+            <div class="stat-label">续费率</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-value" data-countup="95" data-suffix="%">80%</div>
+            <div class="stat-label">课堂注意力</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-value" data-countup="60" data-suffix="%+">60%+</div>
+            <div class="stat-label">效能提升</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 返回按钮 -->
+  <div class="back-button-container animate fade-in delay-300">
+    <button class="back-button" onclick="window.NavigationController.navigateToPage('page7-product', 'prev')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 12H5M12 19l-7-7 7-7"></path>
+      </svg>
+      返回产品列表
+    </button>
+  </div>
+</div>
+
+<!-- 页面特有样式 -->
+<style>
+  .product-detail-wrapper {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .page-title {
+    margin-bottom: 30px;
+  }
+  
+  .page-title h1 {
+    font-size: 2.8rem;
+    display: inline-block;
+    position: relative;
+    color: var(--brand-yellow);
+  }
+  
+  .page-title h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: var(--brand-yellow);
+    border-radius: 2px;
+  }
+  
+  .detail-content-container {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: var(--card-glow);
+  }
+  
+  /* 详细内容样式 */
+  .detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .detail-description h3 {
+    font-size: 1.6rem;
+    color: var(--brand-yellow);
+    margin-bottom: 15px;
+  }
+  
+  .detail-description p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--text-white-muted);
+    margin-bottom: 20px;
+  }
+  
+  .feature-list {
+    margin-top: 25px;
+  }
+  
+  .feature-item {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  
+  .feature-icon {
+    font-size: 1.5rem;
+    color: var(--brand-yellow);
+    flex-shrink: 0;
+  }
+  
+  .feature-content h4 {
+    font-size: 1.2rem;
+    color: var(--text-white);
+    margin-bottom: 5px;
+  }
+  
+  .feature-content p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .detail-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    margin-bottom: 5px;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+    color: var(--text-white-muted);
+  }
+  
+  /* 返回按钮 */
+  .back-button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(255, 214, 0, 0.15);
+    border: 1px solid var(--brand-yellow);
+    border-radius: 30px;
+    color: var(--brand-yellow);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .back-button:hover {
+    background: rgba(255, 214, 0, 0.3);
+    transform: translateX(-5px);
+  }
+  
+  /* 响应式调整 */
+  @media(max-width: 992px) {
+    .detail-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .product-detail-wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    
+    .detail-content-container {
+      padding: 20px;
+    }
+  }
+  
+  @media(max-width: 576px) {
+    .page-title h1 {
+      font-size: 2rem;
+    }
+    
+    .detail-description h3 {
+      font-size: 1.4rem;
+    }
+    
+    .detail-description p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 初始化计数动画
+    if (typeof initCountUpAnimations === 'function') {
+      initCountUpAnimations();
+    } else {
+      // 提供一个内联的计数动画函数以防主函数不可用
+      const countElements = document.querySelectorAll('[data-countup]');
+      
+      countElements.forEach(el => {
+        const target = parseInt(el.getAttribute('data-countup'));
+        const suffix = el.getAttribute('data-suffix') || '';
+        
+        let startValue = 0;
+        const duration = 2000;
+        const startTime = performance.now();
+        
+        function updateValue(currentTime) {
+          const elapsedTime = currentTime - startTime;
+          if (elapsedTime < duration) {
+            const progress = elapsedTime / duration;
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+            const value = Math.floor(easedProgress * target);
+            el.textContent = value + suffix;
+            requestAnimationFrame(updateValue);
+          } else {
+            el.textContent = target + suffix;
+          }
+        }
+        
+        requestAnimationFrame(updateValue);
+      });
+    }
+  });
+</script>

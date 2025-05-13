@@ -1,123 +1,920 @@
-<!-- 第7页: 双轨创新产品体系 -->
-<div class="content-container">
-  <!-- 页面标题 -->
-  <div class="page-title">
-    <h1>Booka 双轨创新产品体系</h1>
+<!-- page7-product.html - 双轨创新产品体系 -->
+<div class="content-wrapper product-wrapper">
+  <div class="page-title animate fade-in">
+    <h1>Booka双轨创新产品体系</h1>
   </div>
   
-  <!-- 产品展示区域 -->
-  <div class="product-showcase">
+  <div class="product-cards">
     <!-- 左侧: 沉浸式光影阅读 (2-8岁) -->
-    <div class="product-card">
-      <div class="product-header">
-        <h2 class="product-title">沉浸式光影阅读</h2>
-        <p class="product-age">2-8岁</p>
+    <div class="product-card animate fade-in-up delay-200" data-page="page15-productdetail">
+      <div class="card-icon">📚</div>
+      <div class="card-content">
+        <h2 class="card-title">沉浸式光影阅读</h2>
+        <p class="card-desc">对应2-8岁认知特点<br>激发情感连接与自主学习</p>
+        
+        <div class="product-video">
+          <video class="video-element" poster="images/immersive-reading.jpg" preload="metadata">
+            <source src="images/immersive-reading.mp4" type="video/mp4">
+            您的浏览器不支持HTML5视频
+          </video>
+          <div class="video-overlay">让孩子在玩中学</div>
+          <div class="video-play-button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"></polygon>
+            </svg>
+          </div>
+        </div>
       </div>
-      
-      <div class="product-image">
-        <!-- 插入沉浸式阅读课堂照片 -->
-        <img src="../images/immersive-reading.jpg" alt="沉浸式光影阅读课堂">
+
+      <div class="card-footer">
+        <button class="detail-button" data-page="page15-productdetail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+          了解详情
+        </button>
+        <div class="card-stat">
+          <span class="stat-label">续费率</span>
+          <span class="stat-value" data-countup="75" data-suffix="%+">75%+</span>
+        </div>
       </div>
-      
-      <div class="product-description">
-        <p>对应2-8岁认知特点与兴趣，孩子主动学习</p>
-        <div class="highlight-stat">续费率75%+</div>
-        <p class="feature-text">学习效能提升50-70%</p>
-      </div>
-      
-      <button class="detail-button">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-        了解详情
-      </button>
     </div>
     
     <!-- 右侧: AI阅读教练 (9-13岁) -->
-    <div class="product-card">
-      <div class="product-header">
-        <h2 class="product-title">AI阅读教练</h2>
-        <p class="product-age">9-13岁</p>
-      </div>
-      
-      <div class="product-image">
-        <!-- 插入AI界面截图 -->
-        <img src="../images/ai-coach.jpg" alt="AI阅读教练界面">
-      </div>
-      
-      <div class="product-description">
-        <p>自适应推荐+能力测评系统，批判思维与表达力训练</p>
-        <p class="feature-text">为AI时代必备能力打基础</p>
-        <div class="highlight-tags">
-          <span class="tag">个性化学习</span>
-          <span class="tag">跨学科</span>
+    <div class="product-card animate fade-in-up delay-300" data-page="page16-productdetail">
+      <div class="card-icon">🤖</div>
+      <div class="card-content">
+        <h2 class="card-title">AI阅读教练</h2>
+        <p class="card-desc">自适应个性化学习路径<br>培养批判思维与表达能力</p>
+        
+        <div class="product-ai-preview">
+          <img src="images/ai-coach.jpg" alt="AI阅读教练界面">
+          <div class="ai-badge">
+            <span class="ai-pulse"></span>
+            AI 驱动
+          </div>
         </div>
       </div>
-      
-      <button class="detail-button">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-        了解详情
-      </button>
+      <div class="card-footer">
+        <button class="detail-button" data-page="page16-productdetail">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+          了解详情
+        </button>
+        <div class="card-stat">
+          <span class="stat-label">效能提升</span>
+          <span class="stat-value" data-countup="60" data-suffix="%+">60%+</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 左下: 双轨优势 -->
+    <div class="product-card animate fade-in-up delay-400">
+      <div class="card-icon">🔄</div>
+      <div class="card-content">
+        <h2 class="card-title">双轨优势矩阵</h2>
+        <p class="card-desc">无缝衔接的成长体系<br>兼顾兴趣培养与能力提升</p>
+        
+        <div class="advantage-matrix">
+          <div class="matrix-item">
+            <div class="matrix-icon">🚀</div>
+            <div class="matrix-text">低龄情感培养</div>
+          </div>
+          <div class="matrix-item">
+            <div class="matrix-icon">🧠</div>
+            <div class="matrix-text">高阶思维训练</div>
+          </div>
+          <div class="matrix-item">
+            <div class="matrix-icon">🔍</div>
+            <div class="matrix-text">个性化学习</div>
+          </div>
+          <div class="matrix-item">
+            <div class="matrix-icon">📈</div>
+            <div class="matrix-text">兴趣与效果并重</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="advantage-tagline">全年龄段无缝衔接的英语学习解决方案</div>
+      </div>
+    </div>
+    
+    <!-- 右下: 效果数据 -->
+    <div class="product-card animate fade-in-up delay-500">
+      <div class="card-icon">📊</div>
+      <div class="card-content">
+        <h2 class="card-title">成效数据</h2>
+        <p class="card-desc">经实证的学习效果<br>家长与投资人双重认可</p>
+        
+        <div class="data-grid">
+          <div class="data-item">
+            <div class="data-value" data-countup="75" data-suffix="%+">75%+</div>
+            <div class="data-label">课程续费率</div>
+          </div>
+          <div class="data-item">
+            <div class="data-value" data-countup="85" data-suffix="%+">85%+</div>
+            <div class="data-label">家长推荐率</div>
+          </div>
+          <div class="data-item">
+            <div class="data-value" data-countup="60" data-suffix="%+">60%+</div>
+            <div class="data-label">学习效能提升</div>
+          </div>
+          <div class="data-item">
+            <div class="data-value" data-countup="700" data-suffix="+">700+</div>
+            <div class="data-label">课时内容</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="benefit-tagline">"既满足当前应试需求，又培养AI时代核心竞争力"</div>
+      </div>
     </div>
   </div>
+</div>
+
+<!-- 页面特有的CSS -->
+<style>
+  /* 产品页特定样式 - 参照最新设计 */
+  .product-wrapper {
+    padding-top: 30px;
+    padding-bottom: 90px; /* 增加底部间距，避免与底部导航重叠 */
+    height: auto; /* 改为自适应高度 */
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   
-  <!-- 产品优势总结 -->
-  <div class="product-summary">
-    <h3>双轨模式优势：</h3>
-    <div class="advantage-points">
-      <div class="advantage">
-        <div class="advantage-icon">🚀</div>
-        <div class="advantage-text">低龄段重视情感培养</div>
-      </div>
-      
-      <div class="advantage">
-        <div class="advantage-icon">🧠</div>
-        <div class="advantage-text">高龄段培养AI时代核心能力</div>
-      </div>
-      
-      <div class="advantage">
-        <div class="advantage-icon">🔄</div>
-        <div class="advantage-text">无缝衔接的学习路径</div>
-      </div>
-      
-      <div class="advantage">
-        <div class="advantage-icon">📈</div>
-        <div class="advantage-text">效果与兴趣兼顾</div>
-      </div>
-    </div>
-  </div>
-</div>
+  .page-title {
+    margin-bottom: 30px;
+  }
+  
+  .page-title h1 {
+    font-size: 2.8rem;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .page-title h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: var(--brand-yellow);
+    border-radius: 2px;
+  }
+  
+  /* 产品卡片网格 - 模仿highlight-cards的布局 */
+  .product-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    width: 92%; /* 让卡片变窄，避免与右侧翻页按钮重叠 */
+    margin: 0 auto; /* 居中显示 */
+    min-height: 540px; /* 确保卡片高度足够 */
+  }
+  
+  .product-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 15px;
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-medium);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--card-glow);
+    cursor: pointer;
+  }
+  
+  .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--brand-yellow);
+    opacity: 0.7;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--brand-yellow);
+    box-shadow: var(--glow-medium);
+  }
+  
+  .card-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2.5rem;
+    opacity: 0.2;
+  }
+  
+  .card-content {
+    padding-top: 5px;
+  }
+  
+  .card-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  
+  .card-desc {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: var(--text-white-muted);
+    margin-bottom: 15px;
+  }
+  
+  /* 视频与图片容器 - 调整为统一高度 */
+  .product-video {
+    position: relative;
+    width: 100%;
+    height: 220px; /* 固定统一高度 */
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 15px 0;
+    box-shadow: var(--glow-subtle);
+    cursor: pointer;
+  }
+  
+  .video-element {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    object-fit: cover;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+  .video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-yellow);
+    transition: all var(--transition-medium);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(255, 214, 0, 0.5);
+  }
+  
+  .video-play-button svg {
+    width: 32px;
+    height: 32px;
+    stroke: var(--brand-yellow);
+    fill: none;
+  }
+  
+  .video-play-button polygon {
+    fill: var(--brand-yellow);
+  }
+  
+  .video-play-button:hover {
+    background: rgba(255, 214, 0, 0.8);
+    color: var(--brand-dark);
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .video-play-button:hover svg {
+    stroke: var(--brand-dark);
+  }
+  
+  .video-play-button:hover polygon {
+    fill: var(--brand-dark);
+  }
+  
+  .product-ai-preview {
+    position: relative;
+    width: 100%;
+    height: 220px; /* 固定统一高度与视频一致 */
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 15px 0;
+    box-shadow: var(--glow-subtle);
+  }
+  
+  .product-ai-preview img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .product-card:hover .product-ai-preview img {
+    transform: scale(1.05);
+  }
+  
+  .ai-badge {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #00c3ff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .ai-pulse {
+    width: 8px;
+    height: 8px;
+    background: #00c3ff;
+    border-radius: 50%;
+    display: inline-block;
+    animation: aiPulse 1.5s infinite;
+  }
+  
+  @keyframes aiPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  
+  /* 优势矩阵 - 调整为与数据网格相同的布局 */
+  .advantage-matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    margin: 15px 0;
+    width: 100%;
+  }
+  
+  .matrix-item {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all var(--transition-medium);
+    min-height: 60px;
+  }
+  
+  .matrix-item:hover {
+    background: rgba(255, 214, 0, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  .matrix-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  
+  .matrix-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-white);
+  }
+  
+  .advantage-tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-white-muted);
+    text-align: center;
+    width: 100%;
+    margin-top: 5px; /* 减少底部空隙 */
+  }
+  
+  /* 数据网格 */
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    margin: 15px 0;
+    width: 100%;
+  }
+  
+  .data-item {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: all var(--transition-medium);
+  }
+  
+  .data-item:hover {
+    background: rgba(255, 214, 0, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  .data-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    margin-bottom: 5px;
+    line-height: 1;
+  }
+  
+  .data-label {
+    font-size: 1rem;
+    color: var(--text-white-muted);
+  }
+  
+  .benefit-tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-white-muted);
+    text-align: center;
+    width: 100%;
+    margin-top: 5px; /* 减少底部空隙 */
+  }
+  
+  /* 卡片底部 */
+  .card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .detail-button {
+    padding: 8px 16px;
+    background: rgba(255, 214, 0, 0.2);
+    border: 1px solid var(--brand-yellow);
+    border-radius: 20px;
+    color: var(--brand-yellow);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .detail-button:hover {
+    background: var(--brand-yellow);
+    color: var(--brand-dark);
+    transform: translateY(-2px);
+  }
+  
+  .card-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .stat-label {
+    font-size: 0.95rem;
+    color: var(--text-white-muted);
+    margin-bottom: 2px;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    text-shadow: 0 0 10px rgba(255, 214, 0, 0.2);
+  }
+  
+  /* 响应式调整 */
+  @media(max-width: 1200px) {
+    .product-cards {
+      width: 95%;
+      gap: 20px;
+    }
+  }
+  
+  @media(max-width: 992px) {
+    .product-cards {
+      width: 100%;
+    }
+    
+    .data-value {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .product-cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      gap: 20px;
+      min-height: auto;
+    }
+    
+    .product-card {
+      height: auto;
+      min-height: 200px;
+    }
+    
+    .advantage-matrix,
+    .data-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .product-video,
+    .product-ai-preview {
+      height: 180px;
+    }
+  }
+  
+  @media(max-width: 576px) {
+    .product-wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    
+    .product-card {
+      padding: 18px 15px;
+    }
+    
+    .card-title {
+      font-size: 1.9rem;
+    }
+    
+    .card-desc {
+      font-size: 1.1rem;
+    }
+    
+    .data-value {
+      font-size: 1.8rem;
+    }
+    
+    .advantage-matrix,
+    .data-grid {
+      gap: 10px;
+    }
+    
+    .matrix-item,
+    .data-item {
+      padding: 10px;
+    }
+    
+    .matrix-text {
+      font-size: 0.9rem;
+    }
+    
+    .data-label {
+      font-size: 0.8rem;
+    }
+    
+    .product-video,
+    .product-ai-preview {
+      height: 150px;
+    }
+  }
+</style>
 
-<!-- 详情弹窗1: 沉浸式光影阅读 -->
-<div class="product-detail-overlay" id="product-detail-1">
-  <div class="detail-container">
-    <div class="close-detail">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-    </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 初始化计数动画
+    initCountUpAnimations();
     
-    <h2 class="detail-title">沉浸式光影阅读：情感与效能的结合</h2>
+    // 为卡片添加点击事件 - 导航到对应页面
+    setupProductCards();
     
-    <!-- 详情内容... -->
-  </div>
-</div>
-
-<!-- 详情弹窗2: AI阅读教练 -->
-<div class="product-detail-overlay" id="product-detail-2">
-  <div class="detail-container">
-    <div class="close-detail">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-    </div>
+    // 为"了解详情"按钮添加点击事件 - 导航到对应页面
+    setupDetailButtons();
     
-    <h2 class="detail-title">AI阅读教练：个性化学习的未来</h2>
+    // 设置视频播放功能
+    setupVideoPlayer();
     
-    <!-- 详情内容... -->
-  </div>
-</div>
+    // 设置AI卡片特效
+    setupAICardEffects();
+    
+    // 在页面加载后触发设置卡片处理程序事件
+    document.dispatchEvent(new CustomEvent('modal:setupCardHandlers'));
+    
+    // 数字计数动画函数
+    function initCountUpAnimations() {
+      const countElements = document.querySelectorAll('[data-countup]');
+      
+      countElements.forEach(el => {
+        // 如果已经初始化过，跳过
+        if (el.dataset.initialized === 'true') return;
+        
+        const target = parseInt(el.getAttribute('data-countup'));
+        const suffix = el.getAttribute('data-suffix') || '';
+        const duration = 2000; // 动画持续2秒
+        
+        // 使用IntersectionObserver检测元素是否可见
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              let startTimestamp = null;
+              
+              function animate(currentTime) {
+                if (!startTimestamp) startTimestamp = currentTime;
+                const elapsedTime = currentTime - startTimestamp;
+                
+                // 计算当前值（使用缓动函数）
+                const progress = Math.min(elapsedTime / duration, 1);
+                const easedProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+                const currentValue = Math.floor(easedProgress * target);
+                
+                el.textContent = currentValue + suffix;
+                
+                if (progress < 1) {
+                  requestAnimationFrame(animate);
+                } else {
+                  // 标记为已初始化
+                  el.dataset.initialized = 'true';
+                }
+              }
+              
+              requestAnimationFrame(animate);
+              observer.unobserve(el); // 只观察一次
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        observer.observe(el);
+      });
+    }
+    
+    // 设置产品卡片点击
+    function setupProductCards() {
+      const cards = document.querySelectorAll('.product-card');
+      
+      cards.forEach(card => {
+        const pageId = card.getAttribute('data-page');
+        if (!pageId) return; // 跳过没有data-page属性的卡片
+        
+        card.addEventListener('click', function(e) {
+          // 如果点击的是视频区域、播放按钮或详情按钮，不触发卡片点击
+          if (e.target.closest('.product-video') || 
+              e.target.closest('.video-play-button') || 
+              e.target.closest('.detail-button')) {
+            return;
+          }
+          
+          console.log('Card clicked, navigating to:', pageId);
+          
+          // 使用NavigationController导航到对应页面
+          if (window.NavigationController) {
+            window.NavigationController.navigateToPage(pageId, 'next');
+          }
+        });
+      });
+    }
+    
+    // 设置详情按钮点击事件
+    function setupDetailButtons() {
+      const buttons = document.querySelectorAll('.detail-button');
+      
+      buttons.forEach(button => {
+        // 移除旧的事件监听器（如果有）
+        const newButton = button.cloneNode(true);
+        button.parentNode.replaceChild(newButton, button);
+        
+        newButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation(); // 阻止冒泡，防止触发卡片点击事件
+          
+          const pageId = this.getAttribute('data-page');
+          console.log('Detail button clicked, navigating to:', pageId);
+          
+          if (window.NavigationController) {
+            window.NavigationController.navigateToPage(pageId, 'next');
+          }
+        });
+      });
+    }
+    
+    // 视频播放功能 - 完全重写
+    function setupVideoPlayer() {
+      const videoContainers = document.querySelectorAll('.product-video');
+      
+      videoContainers.forEach(container => {
+        const video = container.querySelector('video');
+        const playButton = container.querySelector('.video-play-button');
+        
+        if (!video || !playButton) return;
+        
+        // 调试信息
+        console.log('视频元素初始化:', {
+          视频源: video.querySelector('source')?.src || '未找到源',
+          视频状态: video.readyState,
+          视频海报: video.poster
+        });
+        
+        // 显示播放按钮，确保可见
+        playButton.style.opacity = '1';
+        playButton.style.pointerEvents = 'auto';
+        
+        // 添加视频加载状态监听
+        video.addEventListener('loadeddata', function() {
+          console.log('视频数据已加载');
+          // 确保视频初始状态为暂停
+          video.pause();
+        });
+        
+        // 添加错误监听
+        video.addEventListener('error', function(e) {
+          console.error('视频加载错误:', e);
+          console.error('错误代码:', video.error ? video.error.code : '未知');
+          playButton.innerHTML = '加载失败';
+          playButton.style.background = 'rgba(255, 0, 0, 0.6)';
+        });
+        
+        // 阻止容器点击事件冒泡
+        container.addEventListener('click', function(e) {
+          e.stopPropagation();
+          
+          // 检查是否点击了播放按钮
+          if (!e.target.closest('.video-play-button')) {
+            // 如果点击的是视频区域但不是播放按钮
+            toggleVideo();
+          }
+        });
+        
+        // 点击播放按钮
+        playButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          console.log('播放按钮被点击');
+          
+          toggleVideo();
+        });
+        
+        // 视频结束处理
+        video.addEventListener('ended', function() {
+          console.log('视频播放结束');
+          playButton.style.opacity = '1';
+          playButton.style.pointerEvents = 'auto';
+        });
+        
+        // 视频播放状态监听
+        video.addEventListener('play', function() {
+          console.log('视频开始播放');
+          playButton.style.opacity = '0';
+          playButton.style.pointerEvents = 'none';
+        });
+        
+        video.addEventListener('pause', function() {
+          console.log('视频已暂停');
+          playButton.style.opacity = '1';
+          playButton.style.pointerEvents = 'auto';
+        });
+        
+        // 切换视频播放/暂停的函数
+        function toggleVideo() {
+          console.log('当前视频状态:', video.paused ? '已暂停' : '正在播放');
+          
+          if (video.paused) {
+            // 尝试播放视频
+            console.log('尝试播放视频...');
+            
+            // 确保视频已加载
+            if (video.readyState === 0) {
+              video.load();
+              console.log('正在加载视频...');
+            }
+            
+            // 使用播放承诺处理可能的错误
+            const playPromise = video.play();
+            
+            if (playPromise !== undefined) {
+              playPromise
+                .then(() => {
+                  console.log('视频播放成功');
+                  playButton.style.opacity = '0';
+                  playButton.style.pointerEvents = 'none';
+                })
+                .catch(err => {
+                  console.error('视频播放失败:', err);
+                  
+                  // 特殊处理自动播放策略限制
+                  if (err.name === 'NotAllowedError') {
+                    console.error('浏览器阻止了自动播放，尝试静音播放');
+                    
+                    // 尝试静音播放（绕过自动播放限制）
+                    video.muted = true;
+                    video.play()
+                      .then(() => {
+                        console.log('静音播放成功 - 用户需要取消静音');
+                        // 添加静音提示
+                        const muteAlert = document.createElement('div');
+                        muteAlert.className = 'mute-alert';
+                        muteAlert.innerHTML = '点击取消静音 🔇';
+                        muteAlert.style.position = 'absolute';
+                        muteAlert.style.bottom = '10px';
+                        muteAlert.style.right = '10px';
+                        muteAlert.style.background = 'rgba(0,0,0,0.7)';
+                        muteAlert.style.color = 'white';
+                        muteAlert.style.padding = '5px 10px';
+                        muteAlert.style.borderRadius = '4px';
+                        muteAlert.style.cursor = 'pointer';
+                        muteAlert.style.zIndex = '3';
+                        
+                        container.appendChild(muteAlert);
+                        playButton.style.opacity = '0';
+                        
+                        muteAlert.addEventListener('click', function(e) {
+                          e.stopPropagation();
+                          video.muted = false;
+                          this.remove();
+                        });
+                      })
+                      .catch(err => {
+                        console.error('静音播放也失败:', err);
+                        alert('无法播放视频。请稍后再试或检查浏览器设置。');
+                      });
+                  } else {
+                    // 其他播放错误
+                    alert('视频播放失败：' + (err.message || '未知错误'));
+                  }
+                });
+            }
+          } else {
+            // 暂停视频
+            console.log('暂停视频');
+            video.pause();
+            playButton.style.opacity = '1';
+            playButton.style.pointerEvents = 'auto';
+          }
+        }
+        
+        // 检查视频是否可以播放
+        function checkVideoPlayability() {
+          if (!video.canPlayType('video/mp4')) {
+            console.error('浏览器不支持MP4格式视频');
+            playButton.innerHTML = '不支持的格式';
+            playButton.style.background = 'rgba(255, 0, 0, 0.6)';
+          } else {
+            console.log('浏览器支持MP4格式视频');
+          }
+        }
+        
+        // 运行检查
+        checkVideoPlayability();
+      });
+    }
+    
+    // 设置AI卡片视差效果
+    function setupAICardEffects() {
+      const aiPreview = document.querySelector('.product-ai-preview');
+      if (!aiPreview) return;
+      
+      aiPreview.addEventListener('mousemove', function(e) {
+        // 阻止事件冒泡
+        e.stopPropagation();
+        
+        // 计算鼠标在容器内的相对位置
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        // 计算在元素内的百分比位置
+        const xPercent = ((x / rect.width) - 0.5) * 100;
+        const yPercent = ((y / rect.height) - 0.5) * 100;
+        
+        // 应用视差效果
+        const badge = this.querySelector('.ai-badge');
+        if (badge) {
+          badge.style.transform = `translate(${xPercent * 0.05}px, ${yPercent * 0.05}px)`;
+        }
+      });
+      
+      aiPreview.addEventListener('mouseleave', function() {
+        const badge = this.querySelector('.ai-badge');
+        if (badge) {
+          badge.style.transform = '';
+        }
+      });
+      
+      // 阻止AI卡片点击事件冒泡到卡片
+      aiPreview.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+    }
+  });
+</script>
