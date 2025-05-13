@@ -1,0 +1,668 @@
+/**
+ * Booka乐读 BP - 主样式文件
+ * 未来科技感设计风格 - 主色调黄色系
+ */
+
+:root {
+  /* 主色调系列 */
+  --brand-yellow: #ffd600;
+  --brand-yellow-light: rgba(255, 214, 0, 0.3);
+  --brand-yellow-glow: rgba(255, 214, 0, 0.7);
+  --brand-yellow-neon: #ffea00;
+  
+  /* 背景色系列 */
+  --brand-dark: #030812;
+  --brand-dark-blue: #060d1a;
+  --brand-dark-gradient: linear-gradient(135deg, #030812 0%, #0a1528 100%);
+  
+  /* 文本色系列 */
+  --text-white: rgba(255, 255, 255, 0.95);
+  --text-white-muted: rgba(255, 255, 255, 0.7);
+  --text-yellow: var(--brand-yellow);
+  
+  /* 界面元素色系列 */
+  --card-bg: rgba(3, 8, 18, 0.85);
+  --card-border: rgba(255, 214, 0, 0.3);
+  --card-hover: rgba(255, 214, 0, 0.1);
+  --card-glow: 0 0 20px rgba(255, 214, 0, 0.15);
+  
+  /* 特效颜色 */
+  --glow-strong: 0 0 30px rgba(255, 214, 0, 0.4);
+  --glow-medium: 0 0 20px rgba(255, 214, 0, 0.3);
+  --glow-subtle: 0 0 10px rgba(255, 214, 0, 0.2);
+  
+  /* 系统尺寸 */
+  --nav-height: 80px;
+  --content-max-width: 1400px;
+  --spacing-xl: 4rem;
+  --spacing-lg: 2.5rem;
+  --spacing-md: 1.5rem;
+  --spacing-sm: 1rem;
+  --spacing-xs: 0.5rem;
+  
+  /* 字体系统 */
+  --font-main: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+  
+  /* 交互时间 */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* 全局重置 */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--brand-dark);
+  color: var(--text-white);
+  line-height: 1.6;
+  font-weight: 300;
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 基础排版 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+  font-size: 3.5rem;
+  background: linear-gradient(135deg, var(--text-white) 0%, var(--brand-yellow) 50%, #ff9a00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: var(--spacing-md);
+  letter-spacing: -0.02em;
+  text-shadow: var(--glow-subtle);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--brand-yellow);
+  margin-bottom: var(--spacing-sm);
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: var(--text-white);
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.1rem;
+}
+
+a {
+  color: var(--brand-yellow);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+a:hover {
+  color: var(--brand-yellow-neon);
+  text-shadow: var(--glow-medium);
+}
+
+/* 特殊文本样式 */
+.highlight-text {
+  color: var(--brand-yellow);
+  font-weight: 500;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--brand-yellow) 0%, #ff9a00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.caption-text {
+  font-size: 0.9rem;
+  color: var(--text-white-muted);
+  font-style: italic;
+}
+
+.mono-text {
+  font-family: var(--font-mono);
+  color: var(--brand-yellow);
+  font-size: 0.9rem;
+  background: rgba(255, 214, 0, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+
+/* 页面布局容器 */
+.page-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  z-index: 10;
+}
+
+.content-wrapper {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+  padding-bottom: calc(var(--nav-height) + var(--spacing-lg));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* 页面标题区样式 */
+.page-title {
+  margin-bottom: var(--spacing-xl);
+  position: relative;
+}
+
+.page-title h1 {
+  position: relative;
+  display: inline-block;
+}
+
+.page-title h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background: var(--brand-yellow);
+  border-radius: 2px;
+  box-shadow: var(--glow-medium);
+}
+
+.page-subtitle {
+  font-size: 1.5rem;
+  color: var(--text-white-muted);
+  max-width: 800px;
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-medium);
+  border: none;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background: var(--brand-yellow);
+  color: var(--brand-dark);
+  box-shadow: var(--glow-subtle);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--glow-medium);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--brand-yellow);
+  color: var(--brand-yellow);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 214, 0, 0.1);
+  box-shadow: var(--glow-subtle);
+  transform: translateY(-3px);
+}
+
+/* 卡片样式 */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 15px;
+  padding: var(--spacing-md);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--card-glow);
+  transition: all var(--transition-medium);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--glow-medium);
+  border-color: var(--brand-yellow);
+}
+
+/* 数据展示 */
+.stat {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--brand-yellow);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: var(--text-white-muted);
+}
+
+/* 加载指示器 */
+#page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--brand-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader-logo {
+  width: 180px;
+  margin-bottom: var(--spacing-lg);
+  filter: drop-shadow(var(--glow-medium));
+  animation: logoFloat 2s infinite alternate;
+}
+
+.loader-bar {
+  width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background: var(--brand-yellow);
+  animation: loaderMove 1.5s infinite;
+}
+
+@keyframes loaderMove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(300%); }
+}
+
+@keyframes logoFloat {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* 网格系统 */
+.grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* 弹性盒布局 */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-sm { gap: var(--spacing-sm); }
+.gap-md { gap: var(--spacing-md); }
+.gap-lg { gap: var(--spacing-lg); }
+
+/* 工具类 */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+
+.mb-xs { margin-bottom: var(--spacing-xs); }
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mb-xl { margin-bottom: var(--spacing-xl); }
+
+.mt-xs { margin-top: var(--spacing-xs); }
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+.mt-xl { margin-top: var(--spacing-xl); }
+
+/* 网格系统媒体查询 */
+@media (max-width: 1200px) {
+  html { font-size: 15px; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 992px) {
+  html { font-size: 14px; }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 13px; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .content-wrapper { padding: var(--spacing-md); }
+}
+
+@media (max-width: 480px) {
+  html { font-size: 12px; }
+  h1 { font-size: 2.8rem; }
+  h2 { font-size: 2rem; }
+  .content-wrapper { padding: var(--spacing-sm); }
+}
+
+/* 翻页按钮样式 */
+.page-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.page-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all var(--transition-medium);
+}
+
+.prev-btn {
+  left: 30px;
+}
+
+.next-btn {
+  right: 30px;
+}
+
+.btn-inner {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(3, 8, 18, 0.7);
+  border: 1px solid rgba(255, 214, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-medium);
+  z-index: 2;
+  backdrop-filter: blur(5px);
+}
+
+.btn-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--brand-yellow);
+  opacity: 0;
+  filter: blur(15px);
+  transition: all var(--transition-medium);
+  z-index: 1;
+}
+
+.page-nav-btn svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--brand-yellow);
+  transition: all var(--transition-medium);
+}
+
+/* 悬停效果 */
+.page-nav-btn:hover .btn-inner {
+  background: rgba(3, 8, 18, 0.85);
+  border-color: var(--brand-yellow);
+  transform: scale(1.05);
+}
+
+.page-nav-btn:hover .btn-glow {
+  opacity: 0.3;
+  width: 52px;
+  height: 52px;
+}
+
+.page-nav-btn:hover svg {
+  stroke-width: 2.5;
+}
+
+/* 活跃效果 */
+.page-nav-btn:active .btn-inner {
+  transform: scale(0.95);
+}
+
+/* 禁用状态 */
+.page-nav-btn.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.page-nav-btn.disabled .btn-inner {
+  background: rgba(3, 8, 18, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.page-nav-btn.disabled svg {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+  .page-nav-btn {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .btn-inner {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .btn-glow {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .page-nav-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .prev-btn {
+    left: 20px;
+  }
+  
+  .next-btn {
+    right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .btn-inner {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .btn-glow {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .page-nav-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .prev-btn {
+    left: 12px;
+  }
+  
+  .next-btn {
+    right: 12px;
+  }
+}
+
+/* 禁用时的一些按钮交互 */
+.page-nav-btn.disabled:hover .btn-inner {
+  transform: none;
+  background: rgba(3, 8, 18, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.page-nav-btn.disabled:hover .btn-glow {
+  opacity: 0;
+}
+
+.page-nav-btn.disabled:hover svg {
+  stroke-width: 2;
+}
+
+/* 首页和末页特殊处理 */
+.first-page .prev-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.last-page .next-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 按钮出现动画 */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+.prev-btn {
+  animation: fadeSlideIn 0.8s ease-out 1s forwards;
+  opacity: 0;
+}
+
+.next-btn {
+  animation: fadeSlideIn 0.8s ease-out 1s forwards;
+  opacity: 0;
+}
+
+/* 模态窗口基础样式 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  overflow-y: auto;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}

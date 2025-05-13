@@ -1,0 +1,232 @@
+/* charts.css - 图表样式 */
+
+/* 通用图表容器 */
+.chart-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin: 20px 0;
+}
+
+/* 条形图 */
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 250px;
+  width: 100%;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.chart-bar {
+  flex: 1;
+  background: linear-gradient(to top, var(--brand-yellow), rgba(255, 214, 0, 0.5));
+  margin: 0 5px;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  min-height: 0;
+  height: 0;
+  opacity: 0;
+  transition: height 1s ease, opacity 1s ease;
+}
+
+.chart-bar-label {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.chart-bar-value {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--brand-yellow);
+}
+
+/* 折线图 */
+.line-chart {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.chart-line {
+  fill: none;
+  stroke: var(--brand-yellow);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-line-point {
+  fill: var(--brand-dark);
+  stroke: var(--brand-yellow);
+  stroke-width: 2;
+  r: 5;
+}
+
+.chart-line-label {
+  font-size: 0.9rem;
+  fill: var(--text-light);
+  text-anchor: middle;
+}
+
+.chart-line-value {
+  font-size: 0.9rem;
+  fill: var(--brand-yellow);
+  text-anchor: middle;
+}
+
+/* 饼图 */
+.pie-chart {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.chart-segment {
+  transform-origin: center;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.chart-legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 15px 10px;
+}
+
+.chart-legend-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+.chart-legend-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* 数据指标 */
+.metrics-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.metric {
+  text-align: center;
+  margin: 15px;
+}
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--brand-yellow);
+  margin-bottom: 5px;
+}
+
+.metric-label {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+/* 图表动画 */
+.chart-animation.animated .chart-bar {
+  opacity: 1;
+}
+
+.chart-animation.animated .chart-segment {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* 横轴标签容器 */
+.chart-x-labels {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.chart-x-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+/* 纵轴标签容器 */
+.chart-y-labels {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.chart-y-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .chart-container {
+    height: 250px;
+  }
+  
+  .bar-chart, 
+  .line-chart {
+    height: 200px;
+  }
+  
+  .chart-y-labels {
+    left: -30px;
+  }
+  
+  .chart-x-label,
+  .chart-y-label,
+  .chart-bar-label,
+  .chart-line-label {
+    font-size: 0.8rem;
+  }
+  
+  .metric-value {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    height: 200px;
+  }
+  
+  .bar-chart, 
+  .line-chart {
+    height: 160px;
+  }
+  
+  .chart-legend-item {
+    margin: 0 10px 8px;
+  }
+}

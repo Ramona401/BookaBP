@@ -1,0 +1,362 @@
+<!-- page2-highlights.html - 投资亮点页 -->
+<div class="content-wrapper highlights-wrapper">
+  <div class="page-title animate fade-in">
+    <h1>Booka乐读 — AI教育新时代的投资黄金机会</h1>
+  </div>
+  
+  <div class="highlight-cards">
+    <!-- 卡片1：刚需市场重构 -->
+    <div class="highlight-card animate fade-in-up delay-200" data-page="page3-market">
+      <div class="card-icon">📈</div>
+      <div class="card-content">
+        <h2 class="card-title">刚需市场重构</h2>
+        <p class="card-desc">近千亿级刚需市场升级<br>政策调整东风加持</p>
+      </div>
+      <div class="card-footer">
+        <button class="detail-button" data-page="page3-market">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+          了解详情
+        </button>
+        <div class="card-stat">
+          <span class="stat-label">市场规模</span>
+          <span class="stat-value" data-countup="650" data-suffix="亿+">650亿+</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 卡片2：双轨创新模式 -->
+    <div class="highlight-card animate fade-in-up delay-300" data-page="page4-innovation">
+      <div class="card-icon">🧠</div>
+      <div class="card-content">
+        <h2 class="card-title">双轨创新模式</h2>
+        <p class="card-desc">既解决当下痛点<br>又培养未来必备能力</p>
+      </div>
+      <div class="card-footer">
+        <button class="detail-button" data-page="page4-innovation">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+          了解详情
+        </button>
+        <div class="card-stat">
+          <span class="stat-label">续费率</span>
+          <span class="stat-value" data-countup="75" data-suffix="%+">75%+</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 卡片3：AI全链赋能 -->
+    <div class="highlight-card animate fade-in-up delay-400" data-page="page5-ai-chain">
+      <div class="card-icon">🤖</div>
+      <div class="card-content">
+        <h2 class="card-title">AI全链赋能</h2>
+        <p class="card-desc">全链路降本增效<br>打造运营护城河</p>
+      </div>
+      <div class="card-footer">
+        <button class="detail-button" data-page="page5-ai-chain">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+          了解详情
+        </button>
+        <div class="card-stat">
+          <span class="stat-label">成本降低</span>
+          <span class="stat-value" data-countup="60" data-suffix="%+">60%+</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 卡片4：轻资产高回报 -->
+    <div class="highlight-card animate fade-in-up delay-500" data-page="page6-roi-model">
+      <div class="card-icon">💰</div>
+      <div class="card-content">
+        <h2 class="card-title">轻资产高回报</h2>
+        <p class="card-desc">胶囊门店/店中店<br>盈利模型可快速复制</p>
+      </div>
+      <div class="card-footer">
+        <button class="detail-button" data-page="page6-roi-model">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+          了解详情
+        </button>
+        <div class="card-stat">
+          <span class="stat-label">回本周期</span>
+          <span class="stat-value">8-12月</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 页面特有的CSS -->
+<style>
+  /* 投资亮点页特定样式 */
+  .highlights-wrapper {
+    padding-top: 30px;
+    padding-bottom: 90px; /* 增加底部间距，避免与底部导航重叠 */
+    height: auto; /* 改为自适应高度 */
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .page-title {
+    margin-bottom: 30px;
+  }
+  
+  .highlight-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 25px;
+    width: 92%; /* 让卡片变窄，避免与右侧翻页按钮重叠 */
+    margin: 0 auto; /* 居中显示 */
+    min-height: 540px; /* 设置最小高度确保卡片大小合适 */
+  }
+  
+  .highlight-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 15px;
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-medium);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--card-glow);
+    cursor: pointer;
+    max-width: 100%;
+  }
+  
+  .highlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--brand-yellow);
+    opacity: 0.7;
+  }
+  
+  .highlight-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--brand-yellow);
+    box-shadow: var(--glow-medium);
+  }
+  
+  .card-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2.5rem;
+    opacity: 0.2;
+  }
+  
+  .card-content {
+    padding-top: 5px;
+  }
+  
+  .card-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  
+  .card-desc {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: var(--text-white-muted);
+    margin-bottom: 15px;
+  }
+  
+  .card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .detail-button {
+    padding: 8px 16px;
+    background: rgba(255, 214, 0, 0.2);
+    border: 1px solid var(--brand-yellow);
+    border-radius: 20px;
+    color: var(--brand-yellow);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .detail-button:hover {
+    background: var(--brand-yellow);
+    color: var(--brand-dark);
+    transform: translateY(-2px);
+  }
+  
+  .card-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .stat-label {
+    font-size: 0.95rem;
+    color: var(--text-white-muted);
+    margin-bottom: 2px;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    text-shadow: 0 0 10px rgba(255, 214, 0, 0.2);
+  }
+  
+  /* 响应式调整 */
+  @media(max-width: 1200px) {
+    .highlight-cards {
+      width: 95%;
+      gap: 20px;
+    }
+  }
+  
+  @media(max-width: 992px) {
+    .highlight-cards {
+      width: 100%;
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .highlight-cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      gap: 20px;
+      min-height: auto;
+    }
+    
+    .highlight-card {
+      height: auto;
+      min-height: 200px;
+    }
+  }
+  
+  @media(max-width: 576px) {
+    .highlights-wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    
+    .highlight-card {
+      padding: 18px 15px;
+    }
+    
+    .card-title {
+      font-size: 1.9rem;
+    }
+  }
+</style>
+
+<!-- 页面特有的JS -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 数字计数动画初始化
+    initCountUpAnimations();
+    
+    // 为卡片添加点击事件 - 导航到对应页面
+    const cards = document.querySelectorAll('.highlight-card');
+    cards.forEach(card => {
+      card.addEventListener('click', function(e) {
+        // 避免点击"了解详情"按钮时触发卡片的点击事件
+        if (e.target.closest('.detail-button')) {
+          return;
+        }
+        
+        const pageId = this.getAttribute('data-page');
+        if (pageId && window.NavigationController) {
+          window.NavigationController.navigateToPage(pageId, 'next');
+        }
+      });
+    });
+    
+    // 在页面加载后触发设置卡片处理程序事件
+    document.dispatchEvent(new CustomEvent('modal:setupCardHandlers'));
+
+    // 为"了解详情"按钮添加点击事件 - 导航到对应页面
+    const detailButtons = document.querySelectorAll('.detail-button');
+    detailButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const pageId = this.getAttribute('data-page');
+        if (pageId && window.NavigationController) {
+          window.NavigationController.navigateToPage(pageId, 'next');
+        }
+      });
+    });
+    
+    // 数字计数动画函数
+    function initCountUpAnimations(container = document) {
+      const countElements = container.querySelectorAll('[data-countup]');
+      
+      countElements.forEach(el => {
+        // 如果已经初始化过，跳过
+        if (el.dataset.initialized === 'true') return;
+        
+        const target = parseInt(el.getAttribute('data-countup'));
+        const suffix = el.getAttribute('data-suffix') || '';
+        const duration = 2000; // 动画持续2秒
+        
+        let startTimestamp = null;
+        let rafId = null;
+        
+        function step(timestamp) {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const elapsed = timestamp - startTimestamp;
+          const progress = Math.min(elapsed / duration, 1);
+          
+          // 使用缓动函数使动画更自然
+          const easedProgress = 1 - Math.pow(1 - progress, 3);
+          const currentValue = Math.floor(easedProgress * target);
+          
+          el.textContent = currentValue + suffix;
+          
+          if (progress < 1) {
+            rafId = requestAnimationFrame(step);
+          } else {
+            // 动画完成后标记为已初始化
+            el.dataset.initialized = 'true';
+          }
+        }
+        
+        // 使用IntersectionObserver检测元素是否可见
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // 当元素进入视口时启动动画
+              rafId = requestAnimationFrame(step);
+              observer.unobserve(el); // 只观察一次
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        observer.observe(el);
+      });
+    }
+  });
+</script>

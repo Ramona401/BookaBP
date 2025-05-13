@@ -1,0 +1,290 @@
+/**
+ * Booka乐读 BP - 动画与过渡效果
+ * 未来科技风格动效系统
+ */
+
+/* 页面过渡动效 */
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.7, 0, 0.3, 1), opacity 0.8s;
+}
+
+.page.active {
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 10;
+}
+
+.page.prev {
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: 5;
+}
+
+.page.next {
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 5;
+}
+
+/* 元素进场动画 */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUpIn {
+  0% { opacity: 0; transform: translateY(100px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* 应用动画的类 */
+.animate {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+}
+
+.fade-in { animation-name: fadeIn; }
+.fade-in-left { animation-name: fadeInLeft; }
+.fade-in-right { animation-name: fadeInRight; }
+.zoom-in { animation-name: zoomIn; }
+.slide-up { animation-name: slideUpIn; }
+
+/* 延迟序列 */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-800 { animation-delay: 0.8s; }
+.delay-1000 { animation-delay: 1s; }
+
+/* 强调动画 */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 10px rgba(255, 214, 0, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(255, 214, 0, 0.4); }
+}
+
+@keyframes vibrate {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-2px); }
+  40% { transform: translateX(2px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 应用强调动画的类 */
+.pulse { animation: pulse 2s infinite; }
+.glow-pulse { animation: glowPulse 2s infinite; }
+.vibrate { animation: vibrate 0.3s linear; }
+.float { animation: float 5s ease-in-out infinite; }
+.rotate { animation: rotate 8s linear infinite; }
+
+/* 交互反馈动画 */
+.hover-lift {
+  transition: transform var(--transition-medium);
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+.hover-glow {
+  transition: box-shadow var(--transition-medium);
+}
+
+.hover-glow:hover {
+  box-shadow: var(--glow-medium);
+}
+
+.active-scale {
+  transition: transform var(--transition-fast);
+}
+
+.active-scale:active {
+  transform: scale(0.95);
+}
+
+/* 打字机效果 */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--brand-yellow); }
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--brand-yellow);
+  animation: 
+    typewriter 4s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+/* 数据可视化动画 */
+@keyframes barGrow {
+  from { height: 0; }
+  to { height: 100%; }
+}
+
+@keyframes chartLine {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes countUp {
+  from { content: "0"; }
+  to { content: attr(data-target); }
+}
+
+.chart-line {
+  fill: none;
+  stroke: var(--brand-yellow);
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: chartLine 2s ease-out forwards;
+}
+
+.bar-anim {
+  animation: barGrow 1.5s ease-out forwards;
+}
+
+/* 3D旋转与变换 */
+.perspective-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.rotate-3d {
+  transition: transform var(--transition-medium);
+}
+
+.rotate-3d:hover {
+  transform: rotateY(15deg) rotateX(5deg);
+}
+
+/* LOGO特效 */
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0) rotateY(0); filter: drop-shadow(0 0 15px rgba(255, 214, 0, 0.2)); }
+  50% { transform: translateY(-15px) rotateY(5deg); filter: drop-shadow(0 0 30px rgba(255, 214, 0, 0.4)); }
+}
+
+.logo-anim {
+  animation: logoFloat 6s ease-in-out infinite;
+}
+
+/* 按钮点击波纹效果 */
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1) translate(-50%, -50%);
+  transform-origin: 50% 50%;
+}
+
+.btn-ripple:active::after {
+  opacity: 0.3;
+  transform: scale(60) translate(-50%, -50%);
+  transition: transform 0.6s, opacity 0.6s;
+}
+
+/* 数据更新动画 */
+@keyframes dataUpdate {
+  0% { opacity: 0.3; transform: translateY(5px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.data-refresh {
+  animation: dataUpdate 0.5s ease-out;
+}
+
+/* 渐隐进场序列 */
+.fade-sequence > * {
+  opacity: 0;
+}
+
+.fade-sequence > *:nth-child(1) { animation: fadeIn 0.7s 0.1s forwards; }
+.fade-sequence > *:nth-child(2) { animation: fadeIn 0.7s 0.25s forwards; }
+.fade-sequence > *:nth-child(3) { animation: fadeIn 0.7s 0.4s forwards; }
+.fade-sequence > *:nth-child(4) { animation: fadeIn 0.7s 0.55s forwards; }
+.fade-sequence > *:nth-child(5) { animation: fadeIn 0.7s 0.7s forwards; }
+.fade-sequence > *:nth-child(6) { animation: fadeIn 0.7s 0.85s forwards; }
+
+/* 系统信息卡片展开动画 */
+@keyframes cardExpand {
+  0% { max-height: 0; opacity: 0; }
+  100% { max-height: 1000px; opacity: 1; }
+}
+
+.card-expand {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s;
+}
+
+.card-expand.active {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+/* 移动端性能优化 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

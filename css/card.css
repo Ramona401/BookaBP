@@ -1,0 +1,186 @@
+/* cards.css - 卡片样式系统 */
+
+/* 卡片网格布局 */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* 投资亮点页特定样式 */
+.highlights-wrapper {
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.highlight-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.highlight-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 15px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  transition: var(--transition-normal);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-align: center;
+}
+
+.highlight-card:hover {
+  border-color: var(--brand-yellow);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.highlight-card .card-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 214, 0, 0.1);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.highlight-card .card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.highlight-card .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--brand-yellow);
+}
+
+.highlight-card .card-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.highlight-card .card-data {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.highlight-card .card-data strong {
+  color: var(--brand-yellow);
+  font-weight: 600;
+}
+
+.highlight-card .card-button {
+  padding: 10px 0;
+  background: rgba(255, 214, 0, 0.15);
+  color: var(--brand-yellow);
+  border: 1px solid rgba(255, 214, 0, 0.3);
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.highlight-card .card-button:hover {
+  background: var(--brand-yellow);
+  color: var(--brand-dark);
+}
+
+/* 其他卡片样式 */
+.data-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  height: 100%;
+}
+
+.data-card .card-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--brand-yellow);
+  margin-bottom: 10px;
+}
+
+.data-card .card-label {
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.feature-card {
+  display: flex;
+  align-items: flex-start;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: var(--transition-normal);
+}
+
+.feature-card:hover {
+  border-color: var(--brand-yellow);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card .card-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  color: var(--brand-yellow);
+  flex-shrink: 0;
+}
+
+.feature-card .card-content {
+  flex-grow: 1;
+}
+
+.feature-card .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-white);
+}
+
+.feature-card .card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .highlight-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .highlight-card .card-title {
+    font-size: 1.3rem;
+  }
+  
+  .highlight-card .card-desc {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,357 @@
+/**
+ * Booka乐读 BP - 响应式布局
+ * 多设备适应系统
+ */
+
+/* 基础响应式容器 */
+.container {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* 媒体查询断点 */
+/* 桌面大屏 (1400px以上) */
+@media (min-width: 1400px) {
+  :root {
+    --spacing-xl: 5rem;
+    --spacing-lg: 3rem;
+  }
+  
+  .container {
+    max-width: 1320px;
+  }
+  
+  h1 { font-size: 4rem; }
+  h2 { font-size: 3rem; }
+  h3 { font-size: 2rem; }
+  
+  .grid-4-xl {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .grid-5-xl {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* 普通桌面 (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* 小型桌面 (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  :root {
+    --spacing-xl: 3.5rem;
+    --spacing-lg: 2.2rem;
+  }
+  
+  html { font-size: 15px; }
+  
+  .container {
+    max-width: 960px;
+  }
+  
+  h1 { font-size: 3.2rem; }
+  h2 { font-size: 2.3rem; }
+  
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-3-lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 平板 (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  :root {
+    --spacing-xl: 3rem;
+    --spacing-lg: 2rem;
+    --spacing-md: 1.2rem;
+  }
+  
+  html { font-size: 14px; }
+  
+  .container {
+    max-width: 720px;
+  }
+  
+  h1 { font-size: 2.8rem; }
+  h2 { font-size: 2.1rem; }
+  h3 { font-size: 1.5rem; }
+  
+  .grid-4, .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .md-hidden {
+    display: none !important;
+  }
+  
+  .grid-2-md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .card {
+    padding: var(--spacing-sm);
+  }
+  
+  .page-title h1::after {
+    width: 80px;
+    height: 3px;
+  }
+}
+
+/* 大型手机 (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  :root {
+    --spacing-xl: 2.5rem;
+    --spacing-lg: 1.8rem;
+    --spacing-md: 1rem;
+    --spacing-sm: 0.8rem;
+    --nav-height: 70px;
+  }
+  
+  html { font-size: 13px; }
+  
+  .container {
+    max-width: 540px;
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.3rem; }
+  
+  .grid-4, .grid-3, .grid-2 {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .sm-hidden {
+    display: none !important;
+  }
+  
+  .grid-2-sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .card {
+    padding: var(--spacing-sm);
+  }
+  
+  .stat {
+    font-size: 2.5rem;
+  }
+  
+  .content-wrapper {
+    padding: var(--spacing-md);
+    padding-bottom: calc(var(--nav-height) + var(--spacing-md));
+  }
+  
+  .page-title {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .page-title h1::after {
+    width: 60px;
+    height: 3px;
+  }
+}
+
+/* 小型手机 (576px以下) */
+@media (max-width: 575px) {
+  :root {
+    --spacing-xl: 2rem;
+    --spacing-lg: 1.5rem;
+    --spacing-md: 1rem;
+    --spacing-sm: 0.7rem;
+    --spacing-xs: 0.4rem;
+    --nav-height: 60px;
+  }
+  
+  html { font-size: 12px; }
+  
+  h1 { 
+    font-size: 2.2rem; 
+    letter-spacing: 0;
+  }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.2rem; }
+  
+  p { font-size: 1rem; }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .xs-hidden {
+    display: none !important;
+  }
+  
+  .card {
+    padding: var(--spacing-xs);
+    border-radius: 10px;
+  }
+  
+  .stat {
+    font-size: 2.2rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .content-wrapper {
+    padding: var(--spacing-sm);
+    padding-top: var(--spacing-md);
+    padding-bottom: calc(var(--nav-height) + var(--spacing-sm));
+  }
+  
+  .page-title {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .page-title h1::after {
+    width: 50px;
+    height: 3px;
+    bottom: -8px;
+  }
+  
+  .nav-item {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .loader-logo {
+    width: 150px;
+  }
+}
+
+/* 高度自适应 */
+@media (max-height: 700px) {
+  :root {
+    --spacing-xl: 2rem;
+    --spacing-lg: 1.5rem;
+    --spacing-md: 1rem;
+  }
+  
+  .content-wrapper {
+    padding-top: var(--spacing-md);
+  }
+  
+  h1 { font-size: 2.5rem; }
+  
+  .page-title {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .page-title h1::after {
+    bottom: -8px;
+  }
+}
+
+/* 超小屏幕（折叠手机） */
+@media (max-width: 320px) {
+  :root {
+    --spacing-md: 0.8rem;
+    --spacing-sm: 0.5rem;
+  }
+  
+  html { font-size: 11px; }
+  
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  
+  .nav-item {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* 打印优化 */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .futuristic-bg,
+  .cyber-grid,
+  .neon-glow,
+  .particles-container,
+  .light-flares,
+  .data-streams,
+  .nav-button,
+  .bottom-nav,
+  .page-indicator,
+  .back-to-top,
+  .search-button {
+    display: none !important;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    box-shadow: none;
+  }
+  
+  h1, h2, h3, .highlight-text, .stat {
+    color: #000;
+    background: none;
+    -webkit-text-fill-color: initial;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .content-wrapper {
+    padding: 0;
+  }
+  
+  .page {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+/* 黑暗/明亮模式自适应（备选） */
+@media (prefers-color-scheme: light) {
+  body.auto-theme {
+    --brand-dark: #f5f5f5;
+    --brand-dark-blue: #e8e8e8;
+    --text-white: #222;
+    --text-white-muted: #555;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --card-border: rgba(0, 0, 0, 0.1);
+  }
+  
+  body.auto-theme h1,
+  body.auto-theme h2 {
+    color: #222;
+  }
+  
+  body.auto-theme .cyber-grid::before {
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.07) 1px, transparent 1px), 
+      linear-gradient(90deg, rgba(0, 0, 0, 0.07) 1px, transparent 1px);
+  }
+}
+
+/* 可访问性增强 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

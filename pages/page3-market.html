@@ -1,0 +1,416 @@
+<div class="modal-dialog">
+  <div class="modal-close close-modal">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </div>
+  
+  <div class="modal-content">
+    <h2 class="modal-title">刚需市场重构</h2>
+    
+    <div class="modal-body">
+      <div class="modal-section">
+        <h3 class="section-title">新课标 + AI：教育格局重塑</h3>
+        <p class="section-text">规模为650-750亿元的少儿英语市场正步入需求升级阶段。<br>2025年新课标实施，对英语阅读能力和思维表达提出更高要求，家长教育焦虑升级。</p>
+      </div>
+      
+      <div class="modal-grid">
+        <div class="modal-info">
+          <div class="modal-section">
+            <h3 class="section-title">消费降级与品质需求并存</h3>
+            <ul class="feature-list">
+              <li>经济下行背景下，家长教育支出更理性</li>
+              <li>对服务的质价比需求激增</li>
+              <li>品质与效果成为首要考量</li>
+            </ul>
+          </div>
+          
+          <div class="modal-section">
+            <h3 class="section-title">政策东风助推教育模式创新</h3>
+            <p class="section-text">国家政策明确支持教育与AI融合，推动服务创新。<br>强调个性化、探究式学习和深度阅读体验。<br >多个省市出台政策鼓励AI教育应用。<br>Booka乐读前瞻性布局AI教育，顺势而为。</p>
+          </div>
+        </div>
+        
+        <div class="modal-visual">
+          <div class="chart-container">
+            <h3 class="section-title">少儿英语市场规模预测</h3>
+            <div class="market-chart">
+              <svg width="100%" height="250" viewBox="0 0 400 250">
+                <defs>
+                  <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:rgba(255,214,0,0.8)" />
+                    <stop offset="100%" style="stop-color:rgba(255,214,0,0.1)" />
+                  </linearGradient>
+                </defs>
+                
+                <!-- 坐标轴 -->
+                <line x1="50" y1="200" x2="350" y2="200" stroke="#aaa" />
+                <line x1="50" y1="50" x2="50" y2="200" stroke="#aaa" />
+                
+                <!-- 年份标签 -->
+                <text x="50" y="220" fill="#aaa" text-anchor="middle">2020</text>
+                <text x="125" y="220" fill="#aaa" text-anchor="middle">2022</text>
+                <text x="200" y="220" fill="#aaa" text-anchor="middle">2025</text>
+                <text x="275" y="220" fill="#aaa" text-anchor="middle">2027</text>
+                <text x="350" y="220" fill="#aaa" text-anchor="middle">2030</text>
+                
+                <!-- 金额标签 -->
+                <text x="40" y="200" fill="#aaa" text-anchor="end">0</text>
+                <text x="40" y="150" fill="#aaa" text-anchor="end">350</text>
+                <text x="40" y="100" fill="#aaa" text-anchor="end">650</text>
+                <text x="40" y="50" fill="#aaa" text-anchor="end">1000</text>
+                
+                <!-- 市场规模曲线 -->
+                <path d="M50,180 Q125,170 200,100 T350,50" fill="none" stroke="#FFD600" stroke-width="3" />
+                
+                <!-- 填充区域 -->
+                <path d="M50,180 Q125,170 200,100 T350,50 V200 H50 Z" fill="url(#chartGradient)" opacity="0.6" />
+                
+                <!-- 重点标注 -->
+                <line x1="200" y1="100" x2="200" y2="200" stroke="#aaa" stroke-dasharray="5,5" />
+                <circle cx="200" cy="100" r="5" fill="#FFD600" />
+                <text x="207" y="95" fill="#FFD600" font-weight="bold">650+亿</text>
+              </svg>
+            </div>
+            <div class="chart-caption">
+              1.5亿用户的市场等待AI的赋能与革新，年增长率持续攀升
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="stat-value counter-animation" data-target="650">1000+</div>
+          <div class="stat-label">市场规模(亿元)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value counter-animation" data-target="43">10+%</div>
+          <div class="stat-label">增长率(%)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value counter-animation" data-target="1.5">1.9</div>
+          <div class="stat-label">潜在用户(亿)</div>
+        </div>
+        <div class="stat-card highlight-pulse">
+          <div class="stat-value counter-animation" data-target="75">53.6%</div>
+          <div class="stat-label">AI教育认可度(%)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* 模态弹窗特定样式 */
+  .modal-dialog {
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    animation: modalFadeIn 0.3s ease forwards;
+  }
+  
+  @keyframes modalFadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 10;
+  }
+  
+  .modal-close:hover {
+    background: rgba(255, 214, 0, 0.2);
+    transform: rotate(90deg);
+  }
+  
+  .modal-close svg {
+    width: 20px;
+    height: 20px;
+    stroke: white;
+    stroke-width: 2;
+  }
+  
+  .modal-content {
+    padding: 40px;
+  }
+  
+  .modal-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    margin-bottom: 30px;
+    line-height: 1.2;
+    background: linear-gradient(135deg, #FFFFFF, var(--brand-yellow));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  
+  .modal-section {
+    margin-bottom: 25px;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--brand-yellow);
+    margin-bottom: 15px;
+  }
+  
+  .section-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    margin-bottom: 15px;
+  }
+  
+  .feature-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .feature-list li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--text-light);
+  }
+  
+  .feature-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--brand-yellow);
+  }
+  
+  .chart-container {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chart-caption {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .market-chart {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .stat-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 214, 0, 0.1);
+  }
+  
+  .highlight-pulse::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 214, 0, 0.2);
+    opacity: 0;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--brand-yellow);
+    margin-bottom: 5px;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+  
+  /* 响应式调整 */
+  @media(max-width: 992px) {
+    .modal-content {
+      padding: 30px;
+    }
+    
+    .modal-title {
+      font-size: 2.4rem;
+    }
+    
+    .section-title {
+      font-size: 1.4rem;
+    }
+    
+    .modal-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .stat-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .modal-title {
+      font-size: 2rem;
+    }
+  }
+  
+  @media(max-width: 576px) {
+    .modal-content {
+      padding: 20px;
+    }
+    
+    .modal-title {
+      font-size: 1.8rem;
+    }
+    
+    .section-title {
+      font-size: 1.2rem;
+    }
+    
+    .section-text, .feature-list li {
+      font-size: 1rem;
+    }
+    
+    .stat-cards {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 初始化关闭按钮
+    const closeButtons = document.querySelectorAll('.close-modal');
+    closeButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // 获取模态容器
+        const modalContainer = this.closest('.modal-dialog')?.parentNode || 
+                             document.getElementById('modal-container');
+        
+        if (modalContainer) {
+          // 淡出模态窗口
+          modalContainer.classList.remove('active');
+          
+          // 延迟清空内容并返回
+          setTimeout(() => {
+            if (modalContainer.id === 'modal-container') {
+              modalContainer.innerHTML = '';
+            }
+            
+            // 返回到highlights页面
+            if (typeof loadPage === 'function') {
+              loadPage('page2-highlights');
+            } else {
+              // 备用方式: 触发导航项点击
+              const navItem = document.querySelector('.nav-item[data-page="page2-highlights"]');
+              if (navItem) {
+                navItem.click();
+              }
+            }
+          }, 300);
+        }
+      });
+    });
+    
+    // 初始化计数器动画
+    const counters = document.querySelectorAll('.counter-animation');
+    counters.forEach(counter => {
+      const target = parseFloat(counter.getAttribute('data-target'));
+      const duration = 2000;
+      const step = target / (duration / 16);
+      const decimalPlaces = String(target).includes('.') ? String(target).split('.')[1].length : 0;
+      
+      let current = 0;
+      const updateCounter = () => {
+        current += step;
+        if (current >= target) {
+          counter.textContent = target;
+          return;
+        }
+        
+        counter.textContent = decimalPlaces ? current.toFixed(decimalPlaces) : Math.floor(current);
+        requestAnimationFrame(updateCounter);
+      };
+      
+      // 使用IntersectionObserver检测元素是否可见
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          updateCounter();
+          observer.unobserve(counter);
+        }
+      });
+      
+      observer.observe(counter);
+    });
+  });
+</script>

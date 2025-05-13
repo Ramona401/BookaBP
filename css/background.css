@@ -1,0 +1,88 @@
+/* 添加到background.css，替换现有动态效果 */
+
+/* 基础暗色背景 */
+.futuristic-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #030812 0%, #0a1528 100%);
+  z-index: -10;
+}
+
+/* 静态网格 - 不再旋转 */
+.static-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  background-image: 
+    linear-gradient(rgba(255, 214, 0, 0.05) 1px, transparent 1px), 
+    linear-gradient(90deg, rgba(255, 214, 0, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+}
+
+/* 静态光晕 - 不再使用动画 */
+.static-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -6;
+  background: radial-gradient(
+    circle at 30% 30%, 
+    rgba(255, 214, 0, 0.08) 0%, 
+    transparent 70%
+  );
+  filter: blur(60px);
+  opacity: 0.5;
+}
+
+/* 粒子系统容器 */
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -9;
+  opacity: 0.7;
+}
+
+/* 移除所有动态数据流线 */
+.data-streams {
+  display: none;
+}
+
+/* 移除所有脉冲圆环 */
+.pulse-rings, .pulse-ring {
+  display: none;
+}
+
+/* 移除所有数字雨效果 */
+.digital-rain, .rain-column {
+  display: none;
+}
+
+/* 移除所有扫描线 */
+.scanner-lines, .scanner {
+  display: none;
+}
+
+/* 修改卡片效果，更简洁、更适合内容阅读 */
+.card, .value-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.card:hover, .value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 15px rgba(255, 214, 0, 0.1);
+  border-color: var(--brand-yellow);
+}

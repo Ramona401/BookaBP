@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Booka乐读商业计划书 - 英语成长力革命：沉浸式阅读×AI阅读教练，满足3-12岁儿童英语学习需求">
+  <meta name="keywords" content="Booka乐读,英语教育,AI教育,儿童英语,商业计划书,投资机会">
+  <meta name="author" content="Booka乐读">
+  <meta name="theme-color" content="#ffd600">
+  
+  <title>Booka乐读 | 英语成长力革命 - 商业计划书</title>
+  
+  <!-- 网站图标 -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  
+  <!-- 预加载关键资源 -->
+  <link rel="preload" href="images/logo.png" as="image">
+  <link rel="preload" href="css/main.css" as="style">
+  <link rel="preload" href="js/main.js" as="script">
+  
+  <!-- Google字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS样式表 -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Open Graph标签（社交媒体分享） -->
+  <meta property="og:title" content="Booka乐读 - 英语成长力革命">
+  <meta property="og:description" content="沉浸式阅读×AI阅读教练，满足3-12岁儿童英语学习需求">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://www.mybooka.com">
+  <meta property="og:type" content="website">
+  
+  <!-- 结构化数据 -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Booka乐读",
+      "url": "https://www.mybooka.com",
+      "logo": "https://www.mybooka.com/images/logo.png",
+      "description": "专注3-12岁儿童英语成长与AI教育",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+86-400-088-0246",
+        "contactType": "customer service"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!-- 背景效果系统 -->
+  <div id="background-container">
+    <div class="futuristic-bg"></div>
+    <div class="cyber-grid"></div>
+    <div class="particles-container" id="particles-js"></div>
+    <div class="neon-glow"></div>
+    <div class="data-streams">
+      <!-- 数据流元素将由JS动态生成 -->
+    </div>
+    <div class="digital-rain"></div>
+    <div class="light-flares">
+      <div class="flare flare-1"></div>
+      <div class="flare flare-2"></div>
+      <div class="flare flare-3"></div>
+    </div>
+    <div class="scanner-lines">
+      <div class="scanner scanner-1"></div>
+      <div class="scanner scanner-2"></div>
+    </div>
+    <div class="pulse-rings"></div>
+    <div class="noise-overlay"></div>
+    <div class="glow-border"></div>
+  </div>
+  
+  <!-- 主页面容器 - 所有页面内容将动态加载到这里 -->
+  <main id="page-container"></main>
+  
+  <!-- 进度条 -->
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+  
+  <!-- 返回顶部按钮 -->
+  <button class="back-to-top" aria-label="回到顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+  
+  <!-- 模态窗口容器 - 用于投资亮点详情页 -->
+<div id="modal-container" class="modal-overlay">
+  <!-- 模态内容将动态加载到这里 -->
+</div>
+
+  
+  <!-- 底部导航 -->
+  <nav class="bottom-nav">
+    <div class="nav-container">
+      <div class="nav-item active" data-page="page1-cover">封面</div>
+      <div class="nav-item" data-page="page2-highlights">投资亮点</div>
+      <div class="nav-item" data-page="page7-product">产品体系</div>
+      <div class="nav-item" data-page="page8-ai-barrier">AI壁垒</div>
+      <div class="nav-item" data-page="page9-store-model">单店盈利</div>
+      <div class="nav-item" data-page="page10-expansion">扩张路径</div>
+      <div class="nav-item" data-page="page11-partners">战略合作</div>
+      <div class="nav-item" data-page="page12-team">团队实力</div>
+      <div class="nav-item" data-page="page13-funding">融资方案</div>
+      <div class="nav-item" data-page="page14-contact">联系我们</div>
+    </div>
+  </nav>
+  
+  <!-- 加载指示器 -->
+  <div id="page-loader">
+    <div class="loader-content">
+      <img src="images/logo.png" alt="Booka乐读" class="loader-logo">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+<!-- 左右翻页按钮 -->
+<div class="page-navigation">
+  <button class="page-nav-btn prev-btn" id="prev-page" aria-label="上一页">
+    <div class="btn-inner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </div>
+    <div class="btn-glow"></div>
+  </button>
+  <button class="page-nav-btn next-btn" id="next-page" aria-label="下一页">
+    <div class="btn-inner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </div>
+    <div class="btn-glow"></div>
+  </button>
+</div>
+
+  <!-- 第三方库 -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
+  <!-- 核心脚本加载 -->
+  <script src="js/background.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/modals.js"></script>
+  <script src="js/detail-modals.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- 页面性能监控与分析 -->
+  <script>
+    window.addEventListener('load', () => {
+      // 记录页面加载性能
+      if (window.performance) {
+        const perfData = window.performance.timing;
+        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+        console.log(`页面加载时间: ${pageLoadTime}ms`);
+        
+        // 低端设备检测和优化
+        if (pageLoadTime > 3000) {
+          document.body.classList.add('low-performance');
+          console.log('检测到低性能设备，已应用优化');
+        }
+      }
+    });
+    
+    // 处理可能的错误
+    window.addEventListener('error', (e) => {
+      console.error('页面错误:', e.message);
+      // 可以在这里实现错误上报逻辑
+    });
+  </script>
+</body>
+</html>
