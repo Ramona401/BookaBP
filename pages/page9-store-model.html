@@ -1,477 +1,620 @@
+<!-- page9-store-model.html - 轻资产高回报模型页面 -->
 <div class="content-wrapper store-model-wrapper">
-  <div class="page-title animate-on-scroll">
-    <h1>轻资产高回报：社区胶囊门店快速复制模式</h1>
-    <p class="page-subtitle">低投入、高回报、快速复制的社区胶囊门店模型</p>
+  <div class="page-title animate fade-in">
+    <h1>轻资产高回报：社区胶囊门店模式</h1>
   </div>
   
-  <div class="model-showcase">
-    <!-- 左侧：单店财务模型 -->
-    <div class="model-card animate-on-scroll">
-      <h2 class="model-title">社区胶囊门店盈利模型</h2>
-      
-      <div class="financial-highlights">
-        <div class="financial-item">
-          <div class="item-label">投资规模</div>
-          <div class="item-value">15-25万</div>
-          <div class="item-desc">含装修、设备、首期租金</div>
-        </div>
-        <div class="financial-item">
-          <div class="item-label">年营收</div>
-          <div class="item-value">120-170万</div>
-          <div class="item-desc">课程+AI+增值服务</div>
-        </div>
-        <div class="financial-item">
-          <div class="item-label">毛利率</div>
-          <div class="item-value">60%+</div>
-          <div class="item-desc">远高于行业40%平均水平</div>
-        </div>
-        <div class="financial-item">
-          <div class="item-label">回本周期</div>
-          <div class="item-value">8-12个月</div>
-          <div class="item-desc">传统教育门店通常18-24个月</div>
-        </div>
+  <!-- 全生命周期产品矩阵 (横排展示) -->
+  <div class="section-title first-section-title animate fade-in">
+    <h2>全生命周期产品矩阵</h2>
+  </div>
+  
+  <div class="product-matrix animate fade-in delay-200">
+    <!-- 产品1：引流小课包 -->
+    <div class="product-circle">
+      <div class="product-icon">
+        <i class="icon-rocket"></i>
       </div>
-      
-      <div class="financial-chart">
-        <h3 class="chart-title">投资回报曲线</h3>
-        <div class="chart-container">
-          <!-- SVG回报模型图表 -->
-          <svg width="100%" height="250" viewBox="0 0 500 250">
-            <!-- 坐标轴 -->
-            <line x1="50" y1="200" x2="450" y2="200" stroke="#aaa" />
-            <line x1="50" y1="50" x2="50" y2="200" stroke="#aaa" />
-            
-            <!-- 横轴（月份）标签 -->
-            <text x="50" y="220" fill="#aaa" text-anchor="middle">0</text>
-            <text x="130" y="220" fill="#aaa" text-anchor="middle">3</text>
-            <text x="210" y="220" fill="#aaa" text-anchor="middle">6</text>
-            <text x="290" y="220" fill="#aaa" text-anchor="middle">9</text>
-            <text x="370" y="220" fill="#aaa" text-anchor="middle">12</text>
-            <text x="450" y="220" fill="#aaa" text-anchor="middle">15月</text>
-            
-            <!-- 纵轴（金额）标签 -->
-            <text x="40" y="200" fill="#aaa" text-anchor="end">0</text>
-            <text x="40" y="150" fill="#aaa" text-anchor="end">50万</text>
-            <text x="40" y="100" fill="#aaa" text-anchor="end">100万</text>
-            <text x="40" y="50" fill="#aaa" text-anchor="end">150万</text>
-            
-            <!-- 初始投资 -->
-            <rect x="50" y="180" width="20" height="20" fill="rgba(255,80,80,0.6)" />
-            <text x="60" y="175" fill="#fff" text-anchor="middle" font-size="10">投资</text>
-            
-            <!-- 累计收入曲线 -->
-            <path d="M50,200 L130,185 L210,160 L290,120 L370,80 L450,40" fill="none" stroke="#FFD600" stroke-width="3" />
-            
-            <!-- 收入数据点 -->
-            <circle cx="50" cy="200" r="4" fill="#FFD600" />
-            <circle cx="130" cy="185" r="4" fill="#FFD600" />
-            <circle cx="210" cy="160" r="4" fill="#FFD600" />
-            <!-- 继续 page9-store-model.html SVG图表部分 -->
-            <circle cx="290" cy="120" r="4" fill="#FFD600" />
-            <circle cx="370" cy="80" r="4" fill="#FFD600" />
-            <circle cx="450" cy="40" r="4" fill="#FFD600" />
-            
-            <!-- 回本点标注 -->
-            <line x1="330" y1="40" x2="330" y2="200" stroke="#aaa" stroke-dasharray="5,5" />
-            <text x="330" y="30" fill="#FFD600" text-anchor="middle" font-weight="bold" font-size="12">回本点</text>
-            
-            <!-- 填充区域 -->
-            <path d="M50,200 L130,185 L210,160 L290,120 L370,80 L450,40 L450,200 Z" fill="url(#profit-gradient)" opacity="0.2" />
-            
-            <defs>
-              <linearGradient id="profit-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" style="stop-color:#FFD600" />
-                <stop offset="100%" style="stop-color:transparent" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
-      
-      <div class="model-footer">
-        <button class="btn model-btn">查看详细财务模型</button>
+      <h3 class="product-name">线上小包课</h3>
+      <div class="product-calc">
+        <div>50人 × 50% × ¥1500</div>
+        <div class="product-total">= <span class="highlight-num">¥7.5万</span></div>
       </div>
     </div>
     
-    <!-- 右侧：S-B-C合作模式 -->
-    <div class="model-card animate-on-scroll">
-      <h2 class="model-title">S to B to C 三级合作模式</h2>
-      
-      <div class="collaboration-model">
-        <div class="collaboration-diagram">
-          <div class="collab-node s-node">
-            <div class="node-label">S端（总部）</div>
-            <div class="node-content">
-              <div class="node-roles">内容研发 + AI系统 + 品牌赋能</div>
-              <div class="node-share">分润占比：15-20%</div>
-            </div>
-          </div>
-          
-          <div class="collab-connector s-b-connector">
-            <svg width="100" height="30" viewBox="0 0 100 30">
-              <path d="M0,15 L100,15" stroke="#FFD600" stroke-width="2" />
-              <polygon points="95,10 100,15 95,20" fill="#FFD600" />
-            </svg>
-          </div>
-          
-          <div class="collab-node b-node">
-            <div class="node-label">B端（城市主理人）</div>
-            <div class="node-content">
-              <div class="node-roles">区域拓展 + 运营支持 + 市场统筹</div>
-              <div class="node-share">分润占比：20-25%</div>
-            </div>
-          </div>
-          
-          <div class="collab-connector b-c-connector">
-            <svg width="100" height="30" viewBox="0 0 100 30">
-              <path d="M0,15 L100,15" stroke="#FFD600" stroke-width="2" />
-              <polygon points="95,10 100,15 95,20" fill="#FFD600" />
-            </svg>
-          </div>
-          
-          <div class="collab-node c-node">
-            <div class="node-label">C端（门店主理人）</div>
-            <div class="node-content">
-              <div class="node-roles">一线服务 + 社区运营 + 客户转化</div>
-              <div class="node-share">分润占比：55-65%</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="collaboration-benefits">
-          <h3 class="benefits-title">三级分工价值链</h3>
-          <div class="benefits-grid">
-            <div class="benefit-item">
-              <div class="benefit-icon">⚙️</div>
-              <div class="benefit-text">标准化高效复制</div>
-            </div>
-            <div class="benefit-item">
-              <div class="benefit-icon">⚖️</div>
-              <div class="benefit-text">多方共赢收益结构</div>
-            </div>
-            <div class="benefit-item">
-              <div class="benefit-icon">🛡️</div>
-              <div class="benefit-text">风险共担机制</div>
-            </div>
-            <div class="benefit-item">
-              <div class="benefit-icon">🚀</div>
-              <div class="benefit-text">快速扩张能力</div>
-            </div>
-          </div>
-        </div>
+    <!-- 连接箭头 -->
+    <div class="product-arrow">
+      <svg width="80" height="40" viewBox="0 0 80 40">
+        <path d="M0,20 C30,5 50,35 80,20" stroke="#FFD600" stroke-width="2" fill="none"/>
+        <polygon points="75,20 80,20 77.5,25" fill="#FFD600"/>
+      </svg>
+    </div>
+    
+    <!-- 产品2：沉浸式启蒙服务 -->
+    <div class="product-circle featured-product">
+      <div class="product-icon">
+        <i class="icon-stars"></i>
       </div>
-      
-      <div class="model-footer">
-        <button class="btn model-btn">查看合作案例</button>
+      <h3 class="product-name">沉浸式启蒙服务</h3>
+      <div class="product-calc">
+        <div>50人 × ¥12,000</div>
+        <div class="product-total">= <span class="highlight-num">¥60万</span></div>
+      </div>
+    </div>
+    
+    <!-- 连接箭头 -->
+    <div class="product-arrow">
+      <svg width="80" height="40" viewBox="0 0 80 40">
+        <path d="M0,20 C30,35 50,5 80,20" stroke="#FFD600" stroke-width="2" fill="none"/>
+        <polygon points="75,20 80,20 77.5,15" fill="#FFD600"/>
+      </svg>
+    </div>
+    
+    <!-- 产品3：AI个性化学习 -->
+    <div class="product-circle">
+      <div class="product-icon">
+        <i class="icon-ai"></i>
+      </div>
+      <h3 class="product-name">AI个性化学习</h3>
+      <div class="product-calc">
+        <div>线上: 100人 × ¥1800 = <span class="calc-result">¥18万</span></div>
+        <div>线下: 100人 × 70% × ¥6000</div>
+        <div class="product-total">= <span class="highlight-num">¥42万</span></div>
       </div>
     </div>
   </div>
   
-  <div class="model-summary animate-on-scroll">
+  <div class="product-lifecycle animate fade-in delay-300">
+    <div class="lifecycle-arrow">
+      <svg width="100%" height="12" viewBox="0 0 600 12">
+        <defs>
+          <linearGradient id="arrow-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgba(255,214,0,0.5)" />
+            <stop offset="100%" style="stop-color:rgba(255,214,0,1)" />
+          </linearGradient>
+        </defs>
+        <path d="M0,6 L590,6 L580,1 L590,6 L580,11" stroke="url(#arrow-gradient)" stroke-width="2" fill="none" />
+      </svg>
+    </div>
+    <div class="lifecycle-text">持续服务，延展客户生命周期价值 (LTV: 5-13万)<br>以一线城市收费为例</div>
+  </div>
+  
+  <!-- S-B-C合作模式 (通栏设计) -->
+  <div class="section-title animate fade-in delay-400">
+    <h2>S to B to C 三级合作模式</h2>
+  </div>
+  
+  <div class="collaboration-model animate fade-in delay-500">
+    <div class="collab-nodes">
+      <div class="collab-node s-node">
+        <div class="node-label">S端（总部）</div>
+        <div class="node-content">
+          <div class="node-roles">内容研发 + AI系统 + 品牌赋能</div>
+        </div>
+      </div>
+      
+      <div class="collab-connector">
+        <svg width="50" height="20" viewBox="0 0 50 20">
+          <path d="M0,10 L50,10" stroke="#FFD600" stroke-width="2" />
+          <polygon points="45,5 50,10 45,15" fill="#FFD600" />
+        </svg>
+      </div>
+      
+      <div class="collab-node b-node">
+        <div class="node-label">B端（城市主理人）</div>
+        <div class="node-content">
+          <div class="node-roles">区域拓展 + 运营支持 + 市场统筹</div>
+        </div>
+      </div>
+      
+      <div class="collab-connector">
+        <svg width="50" height="20" viewBox="0 0 50 20">
+          <path d="M0,10 L50,10" stroke="#FFD600" stroke-width="2" />
+          <polygon points="45,5 50,10 45,15" fill="#FFD600" />
+        </svg>
+      </div>
+      
+      <div class="collab-node c-node">
+        <div class="node-label">C端（门店主理人）</div>
+        <div class="node-content">
+          <div class="node-roles">一线服务 + 社区运营 + 客户转化</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="collab-benefits">
+      <div class="benefit-item">
+        <div class="benefit-icon">⚙️</div>
+        <div class="benefit-text">标准化高效复制</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">⚖️</div>
+        <div class="benefit-text">多方共赢结构</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🛡️</div>
+        <div class="benefit-text">风险共担机制</div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🚀</div>
+        <div class="benefit-text">快速扩张能力</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 新增：收益分配展示 -->
+  <div class="section-title animate fade-in delay-600">
+    <h2>三级收益分配模型</h2>
+  </div>
+  
+  <div class="revenue-distribution animate fade-in delay-700">
+    <div class="revenue-circle total-revenue">
+      <div class="revenue-role">总部</div>
+      <div class="revenue-amount">15.75<span class="unit">万</span></div>
+      <div class="revenue-desc">持续赋能<br>+<br>品牌赋能</div>
+    </div>
+    
+    <div class="revenue-plus">+</div>
+    
+    <div class="revenue-circle city-revenue">
+      <div class="revenue-role">城市主理人</div>
+      <div class="revenue-amount">25.5<span class="unit">万</span></div>
+      <div class="revenue-desc">开业基本盘<br>+<br>年度运营绩效</div>
+    </div>
+    
+    <div class="revenue-plus">+</div>
+    
+    <div class="revenue-circle store-revenue">
+      <div class="revenue-role">门店主理人</div>
+      <div class="revenue-amount">86.25<span class="unit">万</span></div>
+      <div class="revenue-desc">直接营收<br>-<br>分成与成本</div>
+    </div>
+  </div>
+  
+  <!-- 总结 - 调整位置使其不被导航栏遮挡 -->
+  <div class="model-summary animate fade-in delay-800">
     <div class="summary-icon">💰</div>
-    <h3 class="summary-title">铁三角合作模式：风险共担，收益共享</h3>
+    <h3 class="summary-title">铁三角合作：风险共担，收益共享</h3>
     <p class="summary-text">高效率、低成本、快回本、强扩展的轻资产模式，让每个参与方都能获得最大化收益</p>
-  </div>
-  
-  <!-- 页面导航 -->
-  <div class="page-navigation">
-    <div class="nav-arrow prev" data-nav="page8-ai-barrier">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M19 12H5M12 19l-7-7 7-7"></path>
-      </svg>
-    </div>
-    <div class="nav-arrow next" data-nav="page10-expansion">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-    </div>
   </div>
 </div>
 
 <style>
   /* 门店模型页特定样式 */
   .store-model-wrapper {
-    padding-top: 60px;
+    padding: 20px 20px 120px; /* 增加底部padding，确保内容不被导航栏遮挡 */
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  .model-showcase {
-    display: flex;
-    gap: 40px;
-    margin: 50px 0;
+  /* 第一个section title特殊处理，减少与顶部标题区的距离 */
+  .first-section-title {
+    margin-top: 10px !important; /* 强制覆盖原来的间距设置 */
   }
   
-  .model-card {
-    flex: 1;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 20px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.4s;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  .section-title {
+    text-align: center;
+    margin: 25px 0 15px;
   }
   
-  .model-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--brand-yellow);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  }
-  
-  .model-title {
-    font-size: 1.8rem;
+  .section-title h2 {
+    font-size: 1.7rem;
     font-weight: 700;
     color: var(--brand-yellow);
-    margin-bottom: 25px;
-    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
   }
   
-  /* 财务亮点样式 */
-  .financial-highlights {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 30px;
+  .section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--brand-yellow);
+    border-radius: 3px;
   }
   
-  .financial-item {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
+  /* 产品矩阵样式 - 横排圆形设计 */
+  .product-matrix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
   }
   
-  .item-label {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    margin-bottom: 5px;
-  }
-  
-  .item-value {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--brand-yellow);
-    margin-bottom: 5px;
-  }
-  
-  .item-desc {
-    font-size: 0.85rem;
-    color: var(--text-light);
-  }
-  
-  .financial-chart {
-    margin: 30px 0;
-  }
-  
-  .chart-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 15px;
-    color: var(--text-white);
-  }
-  
-  .chart-container {
-    width: 100%;
+  .product-circle {
+    width: 250px;
     height: 250px;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 10px;
-    padding: 15px;
-  }
-  
-  /* 合作模式样式 */
-  .collaboration-model {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .collaboration-diagram {
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid rgba(255, 214, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
   
-    .collab-node {
-    width: 100%;
+  .product-circle:hover {
+    transform: translateY(-8px);
+    border-color: var(--brand-yellow);
+    box-shadow: 0 15px 30px rgba(255, 214, 0, 0.15);
+    background: rgba(255, 214, 0, 0.08);
+  }
+  
+  .featured-product {
+    background: rgba(255, 214, 0, 0.1);
+    border: 2px solid var(--brand-yellow);
+    box-shadow: 0 8px 20px rgba(255, 214, 0, 0.2);
+  }
+  
+  .featured-product:hover {
+    box-shadow: 0 15px 35px rgba(255, 214, 0, 0.3);
+  }
+  
+  .product-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 214, 0, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: var(--brand-yellow);
+  }
+  
+  .product-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--brand-yellow);
+    margin-bottom: 12px;
+  }
+  
+  .product-calc {
+    font-size: 0.9rem;
+    color: var(--text-white-muted);
+    line-height: 1.5;
+  }
+  
+  .product-total {
+    margin-top: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  
+  .highlight-num {
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .calc-result {
+    color: var(--brand-yellow);
+  }
+  
+  .product-arrow {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 生命周期箭头 */
+  .product-lifecycle {
+    margin: 15px auto 25px;
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .lifecycle-arrow {
+    margin-bottom: 8px;
+  }
+  
+  .lifecycle-text {
+    font-size: 0.95rem;
+    color: var(--text-white-muted);
+    font-style: italic;
+  }
+  
+  /* 合作模式样式 - 通栏设计 */
+  .collaboration-model {
+    background: rgba(3, 8, 18, 0.4);
     border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto 25px;
+    max-width: 1000px;
+    border: 1px solid rgba(255, 214, 0, 0.1);
+  }
+  
+  .collab-nodes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .collab-node {
+    flex: 1;
+    border-radius: 12px;
     padding: 15px;
     text-align: center;
     background: rgba(255, 255, 255, 0.05);
-    transition: all 0.3s;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-top: 3px solid transparent;
   }
   
   .collab-node:hover {
-    background: rgba(255, 214, 0, 0.1);
     transform: translateY(-5px);
+    background: rgba(255, 214, 0, 0.08);
   }
   
-  .s-node {
-    border-top: 3px solid var(--brand-yellow);
-  }
-  
-  .b-node {
-    border-top: 3px solid #4ECDC4;
-  }
-  
-  .c-node {
-    border-top: 3px solid #FF6B6B;
-  }
+  .s-node { border-top-color: var(--brand-yellow); }
+  .b-node { border-top-color: #4ECDC4; }
+  .c-node { border-top-color: #FF6B6B; }
   
   .node-label {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-white);
     margin-bottom: 10px;
   }
   
-  .node-content {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
   .node-roles {
-    font-size: 0.9rem;
-    color: var(--text-light);
-  }
-  
-  .node-share {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--brand-yellow);
+    font-size: 0.85rem; /* 减小字号 */
+    color: var(--text-white-muted);
+    line-height: 1.4;
   }
   
   .collab-connector {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .collab-benefits {
     display: flex;
     justify-content: center;
-    height: 30px;
-  }
-  
-  .collaboration-benefits {
-    margin-top: 20px;
-  }
-  
-  .benefits-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 15px;
-    color: var(--text-white);
-  }
-  
-  .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    flex-wrap: wrap;
   }
   
   .benefit-item {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
+    gap: 8px;
+    padding: 8px 12px;
     background: rgba(255, 255, 255, 0.03);
     border-radius: 8px;
+    transition: all 0.3s ease;
+    border-left: 2px solid var(--brand-yellow);
+  }
+  
+  .benefit-item:hover {
+    background: rgba(255, 214, 0, 0.05);
+    transform: translateY(-3px);
   }
   
   .benefit-icon {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   
   .benefit-text {
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: var(--text-white);
   }
   
-  .model-footer {
-    margin-top: auto;
-    padding-top: 20px;
+  /* 收益分配模型样式 */
+  .revenue-distribution {
     display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 900px;
   }
   
-  .model-btn {
-    width: 100%;
-    padding: 12px;
+  .revenue-circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-align: center;
+    color: var(--brand-dark);
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .revenue-circle:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .total-revenue {
+    background: var(--brand-yellow);
+  }
+  
+  .city-revenue {
+    background: var(--brand-yellow);
+  }
+  
+  .store-revenue {
+    background: var(--brand-yellow);
+  }
+  
+  .revenue-role {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .revenue-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  
+  .unit {
     font-size: 1.1rem;
   }
   
+  .revenue-desc {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  .revenue-plus {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--brand-yellow);
+  }
+  
+  /* 总结样式 - 调整位置避免被导航栏遮挡 */
   .model-summary {
     text-align: center;
-    margin: 40px 0;
-    padding: 30px;
+    margin: 25px auto 0;
+    padding: 25px;
     background: rgba(255, 214, 0, 0.05);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 214, 0, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 214, 0, 0.15);
+    max-width: 900px;
   }
   
   .summary-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
   }
   
   .summary-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--brand-yellow);
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
   
   .summary-text {
-    font-size: 1.2rem;
-    color: var(--text-light);
-    max-width: 800px;
+    font-size: 1.05rem;
+    color: var(--text-white-muted);
+    max-width: 720px;
     margin: 0 auto;
     line-height: 1.5;
   }
   
+  /* 浮动动画 */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  
+  /* 闪光效果动画 */
+  @keyframes shine {
+    0% { background-position: -100% 0; }
+    100% { background-position: 200% 0; }
+  }
+  
+  .featured-product::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shine 3s infinite;
+  }
+  
+  /* 图标替代 */
+  .icon-rocket:before { content: "🚀"; }
+  .icon-stars:before { content: "✨"; }
+  .icon-ai:before { content: "🤖"; }
+  
   /* 响应式调整 */
   @media(max-width: 992px) {
-    .model-showcase {
+    .product-matrix {
       flex-direction: column;
-      gap: 30px;
+      gap: 15px;
     }
     
-    .model-title {
-      font-size: 1.6rem;
+    .product-arrow {
+      transform: rotate(90deg);
+      margin: -8px 0;
+    }
+    
+    .collab-nodes {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .collab-connector {
+      transform: rotate(90deg);
+      height: 40px;
+      margin: -10px 0;
+    }
+    
+    .revenue-distribution {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .revenue-plus {
+      transform: rotate(90deg);
+    }
+    
+    /* 移动设备增加更多底部padding */
+    .store-model-wrapper {
+      padding-bottom: 140px;
     }
   }
   
   @media(max-width: 768px) {
-    .financial-highlights {
-      grid-template-columns: 1fr;
+    .product-circle {
+      width: 200px;
+      height: 200px;
     }
     
-    .benefits-grid {
-      grid-template-columns: 1fr;
+    .revenue-circle {
+      width: 150px;
+      height: 150px;
     }
     
-    .summary-title {
-      font-size: 1.5rem;
+    .collab-benefits {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
     }
     
-    .summary-text {
-      font-size: 1.1rem;
-    }
-  }
-  
-  @media(max-width: 576px) {
-    .model-card {
-      padding: 20px;
-    }
-    
-    .model-title {
-      font-size: 1.4rem;
-    }
-    
-    .item-value {
-      font-size: 1.4rem;
-    }
-    
-    .node-label {
-      font-size: 1.1rem;
+    .benefit-item {
+      width: 100%;
+      max-width: 300px;
     }
     
     .summary-title {
@@ -479,31 +622,86 @@
     }
     
     .summary-text {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media(max-width: 576px) {
+    .product-circle {
+      width: 180px;
+      height: 180px;
+      padding: 10px;
+    }
+    
+    .product-name {
       font-size: 1rem;
+    }
+    
+    .product-calc {
+      font-size: 0.75rem;
+    }
+    
+    .revenue-circle {
+      width: 130px;
+      height: 130px;
+    }
+    
+    .revenue-amount {
+      font-size: 1.6rem;
+    }
+    
+    .revenue-role {
+      font-size: 0.95rem;
+    }
+    
+    .section-title h2 {
+      font-size: 1.4rem;
+    }
+    
+    .node-label {
+      font-size: 1rem;
+    }
+    
+    .summary-title {
+      font-size: 1.2rem;
+    }
+    
+    /* 小屏幕设备增加更多底部padding */
+    .store-model-wrapper {
+      padding-bottom: 160px;
     }
   }
 </style>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // 初始化页内导航
-    const navArrows = document.querySelectorAll('.nav-arrow');
-    navArrows.forEach(arrow => {
-      arrow.addEventListener('click', function() {
-        const targetPage = this.getAttribute('data-nav');
-        loadPage(targetPage);
+    // 添加产品圆圈交互效果
+    const productCircles = document.querySelectorAll('.product-circle');
+    productCircles.forEach(circle => {
+      circle.addEventListener('mouseenter', function() {
+        // 添加悬停效果，其他圆圈稍微变暗
+        productCircles.forEach(otherCircle => {
+          if (otherCircle !== circle) {
+            otherCircle.style.opacity = '0.7';
+          }
+        });
+      });
+      
+      circle.addEventListener('mouseleave', function() {
+        // 恢复所有圆圈的正常显示
+        productCircles.forEach(otherCircle => {
+          otherCircle.style.opacity = '1';
+        });
       });
     });
     
-    // 模型详情按钮
-    const modelBtns = document.querySelectorAll('.model-btn');
-    modelBtns.forEach((btn, index) => {
-      btn.addEventListener('click', function() {
-        // 这里可以添加打开详情弹窗的逻辑
-        console.log(`打开模型${index + 1}详情`);
-      });
+    // 收益圆圈动画
+    const revenueCircles = document.querySelectorAll('.revenue-circle');
+    revenueCircles.forEach((circle, index) => {
+      // 设置延迟动画
+      setTimeout(() => {
+        circle.classList.add('animated');
+      }, 500 + (index * 200));
     });
   });
 </script>
-
-

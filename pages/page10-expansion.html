@@ -1,277 +1,482 @@
-<div class="content-wrapper expansion-wrapper">
-  <div class="page-title animate-on-scroll">
+<!-- page10-expansion.html - 扩张路径页 -->
+<div class="content-wrapper">
+  <!-- 页面标题 -->
+  <div class="page-title">
     <h1>战略布局与扩张路径</h1>
-    <p class="page-subtitle">三阶段全国市场战略，打造高价值教育品牌网络</p>
   </div>
   
-  <div class="expansion-map-container animate-on-scroll">
-    <div class="map-title">全国战略布局计划</div>
-    <div class="china-map">
-      <!-- 中国地图SVG -->
-      <svg width="100%" height="500" viewBox="0 0 1000 800" class="china-map-svg">
-        <!-- 地图轮廓（简化版） -->
-        <path d="M150,300 C200,250 300,200 400,180 C500,160 600,170 700,200 C800,230 850,300 900,400 C920,450 910,500 890,550 C870,600 820,650 750,680 C680,710 600,720 500,710 C400,700 350,650 300,600 C250,550 200,500 180,450 C160,400 140,350 150,300 Z" fill="rgba(3, 8, 18, 0.5)" stroke="#555" stroke-width="2"/>
+  <!-- 中国扩张地图 - 改进版 -->
+  <div class="card map-container">
+    <h3 class="map-title">全国战略布局计划</h3>
+    <p class="map-subtitle">三阶段全国市场战略，打造高价值教育品牌网络</p>
+    
+    <div class="expansion-map">
+      <div class="china-map-visual">
+        <!-- 增强版中国地图轮廓 -->
+        <div class="map-outline">
+          <div class="china-shape"></div>
+          
+          <!-- 主要城市标记 -->
+          <div class="city-marker phase1" style="top: 25%; left: 55%;" data-city="北京"></div>
+          <div class="city-marker phase1" style="top: 45%; left: 65%;" data-city="上海"></div>
+          <div class="city-marker phase1" style="top: 70%; left: 60%;" data-city="广州"></div>
+          <div class="city-marker phase1" style="top: 72%; left: 62%;" data-city="深圳"></div>
+          
+          <!-- 阶段二城市 -->
+          <div class="city-marker phase2" style="top: 50%; left: 53%;" data-city="武汉"></div>
+          <div class="city-marker phase2" style="top: 55%; left: 40%;" data-city="成都"></div>
+          <div class="city-marker phase2" style="top: 35%; left: 58%;" data-city="济南"></div>
+          <div class="city-marker phase2" style="top: 48%; left: 62%;" data-city="南京"></div>
+          <div class="city-marker phase2" style="top: 50%; left: 64%;" data-city="杭州"></div>
+          <div class="city-marker phase2" style="top: 60%; left: 42%;" data-city="重庆"></div>
+          
+          <!-- 阶段三城市群 -->
+          <div class="city-cluster phase3" style="top: 30%; left: 45%;"></div>
+          <div class="city-cluster phase3" style="top: 65%; left: 50%;"></div>
+          <div class="city-cluster phase3" style="top: 40%; left: 65%;"></div>
+          <div class="city-cluster phase3" style="top: 55%; left: 70%;"></div>
+          <div class="city-cluster phase3" style="top: 20%; left: 60%;"></div>
+          
+          <!-- 扩张路径连线 -->
+          <div class="expansion-path phase1-path"></div>
+          <div class="expansion-path phase2-path"></div>
+          <div class="expansion-path phase3-path"></div>
+        </div>
         
-        <!-- 一线城市标记 - 第一阶段 -->
-        <circle cx="500" cy="320" r="15" fill="rgba(255, 214, 0, 0.8)" class="city-marker phase1" data-city="北京"/>
-        <circle cx="520" cy="380" r="15" fill="rgba(255, 214, 0, 0.8)" class="city-marker phase1" data-city="上海"/>
-        <circle cx="480" cy="450" r="15" fill="rgba(255, 214, 0, 0.8)" class="city-marker phase1" data-city="广州"/>
-        <circle cx="470" cy="440" r="15" fill="rgba(255, 214, 0, 0.8)" class="city-marker phase1" data-city="深圳"/>
-        
-        <!-- 省会城市标记 - 第二阶段 -->
-        <circle cx="440" cy="350" r="10" fill="rgba(255, 214, 0, 0.5)" class="city-marker phase2" data-city="武汉"/>
-        <circle cx="420" cy="390" r="10" fill="rgba(255, 214, 0, 0.5)" class="city-marker phase2" data-city="成都"/>
-        <circle cx="530" cy="330" r="10" fill="rgba(255, 214, 0, 0.5)" class="city-marker phase2" data-city="济南"/>
-        <circle cx="510" cy="360" r="10" fill="rgba(255, 214, 0, 0.5)" class="city-marker phase2" data-city="南京"/>
-        <circle cx="480" cy="370" r="10" fill="rgba(255, 214, 0, 0.5)" class="city-marker phase2" data-city="杭州"/>
-        <circle cx="450" cy="400" r="10" fill="rgba(255, 214, 0, 0.5)" class="city-marker phase2" data-city="重庆"/>
-        
-        <!-- 其他城市标记 - 第三阶段 -->
-        <circle cx="400" cy="350" r="6" fill="rgba(255, 214, 0, 0.3)" class="city-marker phase3"/>
-        <circle cx="410" cy="320" r="6" fill="rgba(255, 214, 0, 0.3)" class="city-marker phase3"/>
-        <circle cx="450" cy="300" r="6" fill="rgba(255, 214, 0, 0.3)" class="city-marker phase3"/>
-        <circle cx="470" cy="330" r="6" fill="rgba(255, 214, 0, 0.3)" class="city-marker phase3"/>
-        <circle cx="490" cy="290" r="6" fill="rgba(255, 214, 0, 0.3)" class="city-marker phase3"/>
-        <circle cx="520" cy="410" r="6" fill="rgba(255, 214, 0, 0.3)" class="city-marker phase3"/>
-        <circle cx="540" cy="430" r="6" fill="rgba(255, 214, 0, 0.3)" class="city-marker phase3"/>
-        <circle cx="460" cy="420" r="6" fill="rgba(255, 214, 0, 0.3)" class="city-marker phase3"/>
-        <circle cx="430" cy="430" r="6" fill="rgba(255, 214, 0, 0.3)" class="city-marker phase3"/>
-        <circle cx="420" cy="350" r="6" fill="rgba(255, 214, 0, 0.3)" class="city-marker phase3"/>
-        
-        <!-- 扩张路径 -->
-        <path d="M500,320 L520,380 L480,450 L470,440" stroke="#FFD600" stroke-width="3" fill="none" stroke-dasharray="5,5" class="expansion-path phase1"/>
-        <path d="M500,320 L530,330 L510,360 L520,380 L480,370 L450,400 L480,450" stroke="#FFD600" stroke-width="2" fill="none" stroke-dasharray="5,5" class="expansion-path phase2" opacity="0.7"/>
-        <path d="M500,320 L450,300 L410,320 L400,350 L420,350 L440,350 L450,400 L430,430 L460,420 L480,450 L540,430 L520,380" stroke="#FFD600" stroke-width="1" fill="none" stroke-dasharray="3,3" class="expansion-path phase3" opacity="0.5"/>
-        
-        <!-- 图例 -->
-        <circle cx="100" cy="700" r="15" fill="rgba(255, 214, 0, 0.8)"/>
-        <text x="125" y="705" fill="#fff" font-size="14">一线城市（阶段一）</text>
-        
-        <circle cx="100" cy="730" r="10" fill="rgba(255, 214, 0, 0.5)"/>
-        <text x="125" y="735" fill="#fff" font-size="14">省会城市（阶段二）</text>
-        
-        <circle cx="100" cy="760" r="6" fill="rgba(255, 214, 0, 0.3)"/>
-        <text x="125" y="765" fill="#fff" font-size="14">地级市（阶段三）</text>
-      </svg>
+        <!-- 城市名称标签 -->
+        <div class="city-labels">
+          <span class="city-label" style="top: 22%; left: 55%;">北京</span>
+          <span class="city-label" style="top: 46%; left: 67%;">上海</span>
+          <span class="city-label" style="top: 71%; left: 62%;">广深</span>
+          <span class="city-label phase2-label" style="top: 50%; left: 51%;">武汉</span>
+          <span class="city-label phase2-label" style="top: 55%; left: 37%;">成都</span>
+        </div>
+      </div>
       
-      <!-- 城市标签提示 -->
-      <div class="city-tooltip" id="city-tooltip"></div>
+      <div class="map-legend">
+        <div class="legend-item">
+          <span class="legend-marker phase1"></span>
+          <span>一线城市（阶段一）：北京、上海、广州、深圳</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-marker phase2"></span>
+          <span>省会城市（阶段二）：武汉、成都、南京等20+城市</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-marker phase3"></span>
+          <span>地级市（阶段三）：80+城市全面覆盖</span>
+        </div>
+      </div>
     </div>
   </div>
   
-  <div class="expansion-phases">
+  <!-- 三阶段扩张策略 -->
+  <h3 class="section-title">三阶段扩张策略</h3>
+  
+  <div class="grid grid-3 phase-cards">
     <!-- 阶段一 -->
-    <div class="phase-card animate-on-scroll">
+    <div class="card phase-card">
       <div class="phase-header">
-        <div class="phase-label">阶段一</div>
-        <div class="phase-period">2024-2025</div>
+        <span class="phase-label">阶段一</span>
+        <span class="phase-period">2025-2027</span>
       </div>
       <h3 class="phase-title">一线城市核心区60+门店</h3>
-      <div class="phase-metrics">
-        <div class="phase-metric">
-          <div class="metric-value">60+</div>
-          <div class="metric-label">门店</div>
+      <div class="phase-stats">
+        <div class="stat-item">
+          <span class="stat">60+</span>
+          <span class="stat-label">门店</span>
         </div>
-        <div class="phase-metric">
-          <div class="metric-value">4</div>
-          <div class="metric-label">重点城市</div>
+        <div class="stat-item">
+          <span class="stat">4</span>
+          <span class="stat-label">重点城市</span>
         </div>
-        <div class="phase-metric">
-          <div class="metric-value">8750万</div>
-          <div class="metric-label">年营收</div>
+        <div class="stat-item">
+          <span class="stat">8750万</span>
+          <span class="stat-label">年营收</span>
         </div>
       </div>
-      <p class="phase-description">以北京、上海、广州、深圳为核心，在高消费力社区布局胶囊门店，验证模型可复制性，积累品牌影响力，为全国扩张做准备。</p>
+      <p class="phase-desc">以北京、上海、广州、深圳为核心，在高消费力社区布局胶囊门店，验证模型可复制性，积累品牌影响力。</p>
     </div>
     
     <!-- 阶段二 -->
-    <div class="phase-card animate-on-scroll">
+    <div class="card phase-card">
       <div class="phase-header">
-        <div class="phase-label">阶段二</div>
-        <div class="phase-period">2025-2027</div>
+        <span class="phase-label">阶段二</span>
+        <span class="phase-period">2027-2029</span>
       </div>
-      <h3 class="phase-title">省会城市复制扩张200+门店</h3>
-      <div class="phase-metrics">
-        <div class="phase-metric">
-          <div class="metric-value">200+</div>
-          <div class="metric-label">门店</div>
+      <h3 class="phase-title">省会城市复制扩张250+门店</h3>
+      <div class="phase-stats">
+        <div class="stat-item">
+          <span class="stat">250+</span>
+          <span class="stat-label">门店</span>
         </div>
-        <div class="phase-metric">
-          <div class="metric-value">20+</div>
-          <div class="metric-label">城市</div>
+        <div class="stat-item">
+          <span class="stat">20+</span>
+          <span class="stat-label">城市</span>
         </div>
-        <div class="phase-metric">
-          <div class="metric-value">3亿+</div>
-          <div class="metric-label">年营收</div>
+        <div class="stat-item">
+          <span class="stat">3亿+</span>
+          <span class="stat-label">年营收</span>
         </div>
       </div>
-      <p class="phase-description">扩展至省会城市和重点二线城市，以标准化复制模式快速扩张，实现规模经济效应，建立完整的区域运营网络，提升品牌全国认知度。</p>
+      <p class="phase-desc">扩展至省会城市和重点二线城市，以标准化复制模式快速扩张，实现规模经济效应，建立完整区域运营网络。</p>
     </div>
     
     <!-- 阶段三 -->
-    <div class="phase-card animate-on-scroll">
+    <div class="card phase-card">
       <div class="phase-header">
-        <div class="phase-label">阶段三</div>
-        <div class="phase-period">2027-2030</div>
+        <span class="phase-label">阶段三</span>
+        <span class="phase-period">2029-2031</span>
       </div>
       <h3 class="phase-title">全国城市规模化800+门店</h3>
-      <div class="phase-metrics">
-        <div class="phase-metric">
-          <div class="metric-value">800+</div>
-          <div class="metric-label">门店</div>
+      <div class="phase-stats">
+        <div class="stat-item">
+          <span class="stat">800+</span>
+          <span class="stat-label">门店</span>
         </div>
-        <div class="phase-metric">
-          <div class="metric-value">100+</div>
-          <div class="metric-label">城市</div>
+        <div class="stat-item">
+          <span class="stat">80+</span>
+          <span class="stat-label">城市</span>
         </div>
-        <div class="phase-metric">
-          <div class="metric-value">11.9亿</div>
-          <div class="metric-label">年营收</div>
+        <div class="stat-item">
+          <span class="stat">8亿</span>
+          <span class="stat-label">年营收</span>
         </div>
       </div>
-      <p class="phase-description">全面覆盖全国重点城市，形成完整的门店和运营服务网络，实现品牌全国化，巩固市场领先地位，最终实现潜在上市或并购退出。</p>
+      <p class="phase-desc">全面覆盖全国重点城市，形成完整的门店和运营服务网络，实现品牌全国化，巩固市场领先地位，实现潜在上市或并购退出。</p>
     </div>
   </div>
   
-  <div class="revenue-projection animate-on-scroll">
-    <h3 class="projection-title">营收与估值预测</h3>
-    
-    <div class="projection-chart">
-      <svg width="100%" height="300" viewBox="0 0 800 300">
-        <!-- 坐标轴 -->
-        <line x1="100" y1="250" x2="700" y2="250" stroke="#aaa" />
-        <line x1="100" y1="50" x2="100" y2="250" stroke="#aaa" />
-        
-        <!-- 年份标签 -->
-        <text x="100" y="270" fill="#aaa" text-anchor="middle">2024</text>
-        <text x="225" y="270" fill="#aaa" text-anchor="middle">2025</text>
-        <text x="350" y="270" fill="#aaa" text-anchor="middle">2026</text>
-        <text x="475" y="270" fill="#aaa" text-anchor="middle">2027</text>
-        <text x="600" y="270" fill="#aaa" text-anchor="middle">2028</text>
-        <text x="700" y="270" fill="#aaa" text-anchor="middle">2030</text>
-        
-        <!-- 营收标签 -->
-        <text x="90" y="250" fill="#aaa" text-anchor="end">0</text>
-        <text x="90" y="200" fill="#aaa" text-anchor="end">3亿</text>
-        <text x="90" y="150" fill="#aaa" text-anchor="end">6亿</text>
-        <text x="90" y="100" fill="#aaa" text-anchor="end">9亿</text>
-        <text x="90" y="50" fill="#aaa" text-anchor="end">12亿</text>
-        
-        <!-- 营收曲线 -->
-        <path d="M100,245 L225,230 L350,180 L475,130 L600,80 L700,60" stroke="#FFD600" stroke-width="3" fill="none" />
-        
-        <!-- 估值曲线 -->
-        <path d="M100,240 L225,210 L350,150 L475,100 L600,60 L700,30" stroke="#4ECDC4" stroke-width="3" fill="none" stroke-dasharray="5,5" />
-        
-        <!-- 阶段标记 -->
-        <line x1="225" y1="50" x2="225" y2="250" stroke="#aaa" stroke-dasharray="3,3" />
-        <line x1="475" y1="50" x2="475" y2="250" stroke="#aaa" stroke-dasharray="3,3" />
-        
-        <text x="160" y="35" fill="#FFD600" font-size="12">阶段一</text>
-        <text x="350" y="35" fill="#FFD600" font-size="12">阶段二</text>
-        <text x="600" y="35" fill="#FFD600" font-size="12">阶段三</text>
-        
-        <!-- 图例 -->
-        <line x1="600" y="280" x2="620" y="280" stroke="#FFD600" stroke-width="3" />
-        <text x="625" y="285" fill="#fff" font-size="12">年营收</text>
-        
-        <line x1="670" y="280" x2="690" y="280" stroke="#4ECDC4" stroke-width="3" stroke-dasharray="5,5" />
-        <text x="695" y="285" fill="#fff" font-size="12">估值</text>
-      </svg>
-    </div>
-  </div>
-  
-  <!-- 页面导航 -->
-  <div class="page-navigation">
-    <div class="nav-arrow prev" data-nav="page9-store-model">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M19 12H5M12 19l-7-7 7-7"></path>
-      </svg>
-    </div>
-    <div class="nav-arrow next" data-nav="page11-partners">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
+  <!-- 营收与估值预测 - 简化版本 -->
+  <div class="card mb-xl">
+    <h3 class="text-center mb-md">营收与估值预测</h3>
+    <div class="revenue-chart">
+      <div class="chart-container">
+        <table class="projection-table">
+          <thead>
+            <tr>
+              <th>年份</th>
+              <th>2026</th>
+              <th>2027</th>
+              <th>2028</th>
+              <th>2029</th>
+              <th>2030</th>
+              <th>2031</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>年营收</td>
+              <td>0.3亿</td>
+              <td>0.8亿</td>
+              <td>1.7亿</td>
+              <td>3亿</td>
+              <td>5亿</td>
+              <td>8亿</td>
+            </tr>
+            <tr>
+              <td>估值预测</td>
+              <td>0.9亿</td>
+              <td>2.4亿</td>
+              <td>5.1亿</td>
+              <td>9亿</td>
+              <td>15亿</td>
+              <td>24亿</td>
+            </tr>
+            <tr>
+              <td>扩张阶段</td>
+              <td colspan="2" class="phase-cell phase1">阶段一</td>
+              <td colspan="2" class="phase-cell phase2">阶段二</td>
+              <td colspan="2" class="phase-cell phase3">阶段三</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="chart-note">
+        <p>预计2030年覆盖全国80+城市，实现12亿的年整体营收，总部估值达到5.6亿元</p>
+      </div>
     </div>
   </div>
 </div>
 
 <style>
-  /* 扩张战略页特定样式 */
-  .expansion-wrapper {
-    padding-top: 60px;
+  /* 扩张页面特定样式 */
+  .content-wrapper {
+    padding-top: 30px; /* 减少顶部间距 */
   }
   
-  .expansion-map-container {
-    margin: 30px 0;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  .page-title {
+    margin-bottom: 30px; /* 减少标题下方间距 */
+  }
+  
+  .map-container {
+    margin-bottom: 2.5rem;
+    padding: 1.8rem;
   }
   
   .map-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: var(--brand-yellow);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0.5rem;
   }
   
-  .china-map {
+  .map-subtitle {
+    text-align: center;
+    color: var(--text-white-muted);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .expansion-map {
     position: relative;
     width: 100%;
-    height: 500px;
+    text-align: center;
   }
   
-  .city-marker {
-    cursor: pointer;
-    transition: all 0.3s;
+  /* 改进的内嵌中国地图 */
+  .china-map-visual {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    margin: 0 auto 1.5rem;
+    max-width: 800px;
   }
   
-  .city-marker:hover {
-    transform: scale(1.5);
-  }
-  
-  .city-tooltip {
+  .map-outline {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
   }
   
-  .expansion-phases {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 50px 0;
+  /* 更明确的中国地图轮廓 */
+  .china-shape {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(3, 8, 18, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30% 40% 30% 20% / 30% 30% 40% 30%;
+    box-shadow: inset 0 0 50px rgba(255, 214, 0, 0.05);
+    
+    /* 内部细节增强中国轮廓感 */
+    background-image: 
+      radial-gradient(circle at 55% 45%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 30%, transparent 60%),
+      radial-gradient(circle at 65% 65%, rgba(255, 255, 255, 0.05) 0%, transparent 40%);
+  }
+  
+  /* 东北角 */
+  .china-shape::before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    right: 10%;
+    width: 20%;
+    height: 25%;
+    background-color: rgba(3, 8, 18, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40% 60% 30% 70% / 40% 40% 60% 60%;
+    transform: rotate(15deg);
+  }
+  
+  /* 海南岛 */
+  .china-shape::after {
+    content: '';
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    width: 6%;
+    height: 6%;
+    background-color: rgba(3, 8, 18, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+  }
+  
+  /* 城市标记 */
+  .city-marker {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px rgba(255, 214, 0, 0.5);
+    z-index: 2;
+  }
+  
+  .city-marker.phase1 {
+    background-color: rgba(255, 214, 0, 0.8);
+    width: 16px;
+    height: 16px;
+  }
+  
+  .city-marker.phase2 {
+    background-color: rgba(255, 214, 0, 0.5);
+    width: 12px;
+    height: 12px;
+  }
+  
+  /* 三阶段城市群 */
+  .city-cluster {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 214, 0, 0.1);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .city-cluster::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 214, 0, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* 扩张路径 */
+  .expansion-path {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .phase1-path {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* 用径向渐变+阴影勾勒出路径 */
+    box-shadow: 
+      55% 25% 0 -2px rgba(255, 214, 0, 0.4),
+      65% 45% 0 -2px rgba(255, 214, 0, 0.4),
+      60% 70% 0 -2px rgba(255, 214, 0, 0.4);
+  }
+  
+  .phase2-path {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* 用多重阴影勾勒二阶段扩张路径 */
+    box-shadow: 
+      53% 50% 0 -3px rgba(255, 214, 0, 0.2),
+      40% 55% 0 -3px rgba(255, 214, 0, 0.2),
+      58% 35% 0 -3px rgba(255, 214, 0, 0.2),
+      62% 48% 0 -3px rgba(255, 214, 0, 0.2),
+      64% 50% 0 -3px rgba(255, 214, 0, 0.2),
+      42% 60% 0 -3px rgba(255, 214, 0, 0.2);
+  }
+  
+  .phase3-path {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(
+      circle at center,
+      rgba(255, 214, 0, 0.05) 0%,
+      rgba(255, 214, 0, 0.02) 60%,
+      transparent 80%
+    );
+  }
+  
+  /* 城市标签 */
+  .city-labels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+  }
+  
+  .city-label {
+    position: absolute;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.9);
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  }
+  
+  .phase2-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+  }
+  
+  /* 图例样式 */
+  .map-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .legend-marker {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  
+  .legend-marker.phase1 {
+    background: rgba(255, 214, 0, 0.8);
+  }
+  
+  .legend-marker.phase2 {
+    background: rgba(255, 214, 0, 0.5);
+  }
+  
+  .legend-marker.phase3 {
+    background: rgba(255, 214, 0, 0.3);
+  }
+  
+  .section-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--brand-yellow);
+  }
+  
+  .phase-cards {
+    margin-bottom: 3rem;
   }
   
   .phase-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 20px;
-    padding: 25px;
-    transition: all 0.4s;
+    padding: 1.5rem;
+    transition: transform 0.3s;
   }
   
   .phase-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--brand-yellow);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
   }
   
   .phase-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
   }
   
   .phase-label {
@@ -283,156 +488,135 @@
   .phase-period {
     background: rgba(255, 214, 0, 0.2);
     color: var(--brand-yellow);
-    font-weight: 600;
-    padding: 5px 12px;
+    padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.9rem;
   }
   
   .phase-title {
+    margin-bottom: 1.5rem;
     font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--text-white);
-    margin-bottom: 20px;
-    min-height: 60px;
+    min-height: 3.5rem;
   }
   
-  .phase-metrics {
+  .phase-stats {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
   }
   
-  .phase-metric {
+  .stat-item {
     text-align: center;
   }
   
-  .metric-value {
-    font-size: 1.6rem;
+  .stat {
+    display: block;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--brand-yellow);
-    margin-bottom: 5px;
   }
   
-  .metric-label {
+  .stat-label {
     font-size: 0.9rem;
-    color: var(--text-light);
+    color: var(--text-white-muted);
   }
   
-  .phase-description {
+  .phase-desc {
     font-size: 0.95rem;
-    color: var(--text-light);
     line-height: 1.5;
   }
   
-  .revenue-projection {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 20px;
-    padding: 30px;
-    margin-bottom: 50px;
+  .revenue-chart {
+    padding: 1rem;
   }
   
-  .projection-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--brand-yellow);
-    text-align: center;
-    margin-bottom: 30px;
+  .chart-container {
+    overflow-x: auto;
   }
   
-  .projection-chart {
+  .projection-table {
     width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  
+  .projection-table th,
+  .projection-table td {
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .projection-table th {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+  }
+  
+  .phase-cell {
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .phase-cell.phase1 {
+    background: rgba(255, 214, 0, 0.1);
+    color: var(--brand-yellow);
+  }
+  
+  .phase-cell.phase2 {
+    background: rgba(255, 214, 0, 0.15);
+    color: var(--brand-yellow);
+  }
+  
+  .phase-cell.phase3 {
+    background: rgba(255, 214, 0, 0.2);
+    color: var(--brand-yellow);
+  }
+  
+  .chart-note {
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--text-white-muted);
+    margin-top: 1rem;
   }
   
   /* 响应式调整 */
-  @media(max-width: 1200px) {
-    .expansion-phases {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media(max-width: 992px) {
-    .expansion-map-container {
-      padding: 20px;
-    }
-    
-    .china-map {
-      height: 400px;
-    }
-  }
-  
   @media(max-width: 768px) {
-    .expansion-phases {
-      grid-template-columns: 1fr;
+    .china-map-visual {
+      height: 300px;
     }
     
     .phase-title {
       min-height: auto;
     }
-  }
-  
-  @media(max-width: 576px) {
-    .expansion-map-container {
-      padding: 15px;
-    }
     
-    .china-map {
-      height: 300px;
-    }
-    
-    .phase-metrics {
+    .phase-stats {
       flex-direction: column;
-      gap: 15px;
+      gap: 1rem;
     }
     
-    .phase-metric {
+    .stat-item {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     
-    .metric-value {
-      font-size: 1.4rem;
-      margin-bottom: 0;
+    .stat {
+      margin-right: 1rem;
+    }
+    
+    .city-label {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media(max-width: 480px) {
+    .china-map-visual {
+      height: 250px;
+    }
+    
+    .map-legend {
+      font-size: 0.85rem;
     }
   }
 </style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // 初始化页内导航
-    const navArrows = document.querySelectorAll('.nav-arrow');
-    navArrows.forEach(arrow => {
-      arrow.addEventListener('click', function() {
-        const targetPage = this.getAttribute('data-nav');
-        loadPage(targetPage);
-      });
-    });
-    
-    // 城市标记hover提示
-    const cityMarkers = document.querySelectorAll('.city-marker');
-    const tooltip = document.getElementById('city-tooltip');
-    
-    cityMarkers.forEach(marker => {
-      marker.addEventListener('mouseenter', function(e) {
-        const city = this.getAttribute('data-city');
-        if (city) {
-          tooltip.textContent = city;
-          tooltip.style.left = (e.pageX - 50) + 'px';
-          tooltip.style.top = (e.pageY - 40) + 'px';
-          tooltip.style.opacity = 1;
-        }
-      });
-      
-      marker.addEventListener('mouseleave', function() {
-        tooltip.style.opacity = 0;
-      });
-      
-      marker.addEventListener('mousemove', function(e) {
-        tooltip.style.left = (e.pageX - 50) + 'px';
-        tooltip.style.top = (e.pageY - 40) + 'px';
-      });
-    });
-  });
-</script>
